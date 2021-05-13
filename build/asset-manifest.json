@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f89ad680.chunk.css",
+    "main.js": "/static/js/main.b864fdab.chunk.js",
+    "main.js.map": "/static/js/main.b864fdab.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.04362ffa.js",
+    "runtime-main.js.map": "/static/js/runtime-main.04362ffa.js.map",
+    "static/css/2.95f25948.chunk.css": "/static/css/2.95f25948.chunk.css",
+    "static/js/2.6f4dbc8c.chunk.js": "/static/js/2.6f4dbc8c.chunk.js",
+    "static/js/2.6f4dbc8c.chunk.js.map": "/static/js/2.6f4dbc8c.chunk.js.map",
+    "static/js/3.70ca2df2.chunk.js": "/static/js/3.70ca2df2.chunk.js",
+    "static/js/3.70ca2df2.chunk.js.map": "/static/js/3.70ca2df2.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.95f25948.chunk.css.map": "/static/css/2.95f25948.chunk.css.map",
+    "static/css/main.f89ad680.chunk.css.map": "/static/css/main.f89ad680.chunk.css.map",
+    "static/js/2.6f4dbc8c.chunk.js.LICENSE.txt": "/static/js/2.6f4dbc8c.chunk.js.LICENSE.txt",
+    "static/media/Background.f21c54ee.png": "/static/media/Background.f21c54ee.png",
+    "static/media/Background_globe.7ab8434b.png": "/static/media/Background_globe.7ab8434b.png",
+    "static/media/Banner_bg.df0fd5ca.png": "/static/media/Banner_bg.df0fd5ca.png",
+    "static/media/Base.e22afcda.png": "/static/media/Base.e22afcda.png",
+    "static/media/Footer_wave.8138876e.png": "/static/media/Footer_wave.8138876e.png",
+    "static/media/Graph.ee2b7dfc.png": "/static/media/Graph.ee2b7dfc.png",
+    "static/media/Image_girl.73821f93.png": "/static/media/Image_girl.73821f93.png",
+    "static/media/Rocket.43c1ca01.png": "/static/media/Rocket.43c1ca01.png",
+    "static/media/Signup_Latest.9bf0cf4f.png": "/static/media/Signup_Latest.9bf0cf4f.png",
+    "static/media/Web_bg.4f5039e3.png": "/static/media/Web_bg.4f5039e3.png",
+    "static/media/aboutBase.9b81d313.png": "/static/media/aboutBase.9b81d313.png",
+    "static/media/aboutgraph.3d08744a.png": "/static/media/aboutgraph.3d08744a.png",
+    "static/media/aboutusbanner.86839baa.png": "/static/media/aboutusbanner.86839baa.png",
+    "static/media/management_containerbg.4df6efda.png": "/static/media/management_containerbg.4df6efda.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.04362ffa.js",
+    "static/css/2.95f25948.chunk.css",
+    "static/js/2.6f4dbc8c.chunk.js",
+    "static/css/main.f89ad680.chunk.css",
+    "static/js/main.b864fdab.chunk.js"
+  ]
+}
