@@ -136,14 +136,14 @@ class Home extends React.Component {
         <div className="recent_transactions" style={{backgroundImage:`url(${Background})`}}>
           <div className="container">
             <h2 className="section_heading">Recent transactions</h2>
-            <p className="section_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />
+            <p className="section_content recent_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br />
           Sed volutpat vulputate ut fermentum tristique fermentum posuere.</p>
             <div className="row">
               <div className="col-md-6">
                 <div className="last_depositcontainer">
                   <div className="last_deposittablehead">
                     <img src={LastDeposit} />
-                    <p>Last diposit<br /><span>#1</span></p>
+                    <p className="last_diposit">Last diposit<br /><span>#1</span></p>
                   </div>
                   <div className="table bicoin_table">
                     <table>
@@ -190,7 +190,7 @@ class Home extends React.Component {
                 <div className="last_depositcontainer">
                   <div className="last_deposittablehead">
                     <img src={LastWithdraw} />
-                    <p>Last Withdraw<br /><span>#2</span></p>
+                    <p className="last_diposit">Last Withdraw<br /><span>#2</span></p>
                   </div>
                   <div className="table bicoin_table">
                     <table>
@@ -279,7 +279,7 @@ class Home extends React.Component {
               <img src={Logo} />
             </div>
             <div className="col-md-2">
-              <ul>
+              <ul className="first_col">
                 <li>Main</li>
                 <li>Investments</li>
                 <li>Partner program</li>
