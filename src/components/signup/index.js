@@ -21,6 +21,7 @@ const Signup = () => {
       if (userResult.data.status === 200) {
         swal('success', userResult.data.message, 'success')
         e.target.reset();
+        history.push('/login');
       } else {
         swal('error', userResult.data.message, 'error')
       }

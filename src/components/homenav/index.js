@@ -1,7 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import Logo from '../../assets/images/Logo.png';
 const HomeNav = () => {
+  const history = useHistory();
   return (
     <>
       {/* <nav className="navbar navbar-inverse">
@@ -18,7 +19,7 @@ const HomeNav = () => {
           </ul>
           <ul className="nav navbar-nav navbar-right">
             <li className="logintext"><Link to="/login"> <i className="fa fa-lock"></i>Log in</Link></li>
-            <li><button className="get_startedbtn">Get started</button></li>
+            <li><button className="get_startedbtn" onClick={() => history.push('/signup')}>Get started</button></li>
           </ul>
         </div>
       </nav> */}

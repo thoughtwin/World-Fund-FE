@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useHistory } from 'react-router-dom'
 import ProfileImage from '../../assets/images/profile.png';
 import LogoImage from '../../assets/images/Logo.png';
 import swal from 'sweetalert';
 
 const TopNav = () => {
+  const [userName, setUserName] = useState('');
   let history = useHistory();
   const logout = async () => {
     await swal({
@@ -22,6 +23,12 @@ const TopNav = () => {
       }
     });
   }
+
+  useEffect(() => {
+    const name = JSON.parse(localStorage.getItem('tokens'));
+    setUserName(name.userName);
+  }, [userName]);
+
   return (
     <div>
       <nav className="navbar navbar-inverse">
@@ -31,7 +38,7 @@ const TopNav = () => {
           </div>
           <ul className="nav navbar-nav navbar-right">
             <li><Link to="#" className="notification"><i className="fa fa-bell bellicon"></i></Link></li>
-            <li><Link to="#" className="rebecca_text">Rebecca Young</Link></li>
+            <li><Link to="#" className="rebecca_text">{userName}</Link></li>
             {/* <li><Link to="#" onClick={logout}><img alt="profile.png" src={ProfileImage} className="dashboardheader" /></Link></li> */}
             <li className="dropdown"><Link data-toggle="dropdown" to="#"><img alt="profile.png" src={ProfileImage} className="dashboardheader" /></Link>
               <ul className="dropdown-menu">

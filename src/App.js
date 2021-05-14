@@ -44,7 +44,7 @@ const App = (props) => {
         <div className="App">
           {/* <Navbar /> */}
           <Switch>
-            <Route exact path='/' component={Login} />
+            <Route exact path='/' component={Home} />
             <PrivateRoute exact path="/dashboard" component={Dashboard} />
             <Route exact path='/signup' component={Signup} />
             <Route exact path='/home' component={Home} />
@@ -55,8 +55,8 @@ const App = (props) => {
             <Route exact path='/rules' component={Rules} />
             <Route exact path='/faq' component={Faq} />
             <Route path='/verify' component={Verify} />
-            <Route path='/pagination' component={Pages}/>
-            <Route path='/policies' component={OurPolicies}/>;
+            <Route path='/pagination' component={Pages} />
+            <Route path='/policies' component={OurPolicies} />;
             <PrivateRoute exact path='/settings' component={Settings} />
             <PrivateRoute exact path='/affiliate' component={Affiliate} />
             <PrivateRoute exact path='/deposit' component={Deposit} />

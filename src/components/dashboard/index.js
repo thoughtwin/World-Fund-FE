@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom'
 import ProfileImage from '../../assets/images/profile.png';
 import DashboardImage from '../../assets/images/dashboardimg.png';
@@ -6,6 +6,13 @@ import TopNav from '../topnav';
 import SideNav from '../sidenav';
 
 const Dashboard = () => {
+  const [userName, setUserName] = useState('');
+
+  useEffect(() => {
+    const name = JSON.parse(localStorage.getItem('tokens'));
+    setUserName(name.userName);
+  }, [userName]);
+
   return (
     <>
       <TopNav />
@@ -17,7 +24,7 @@ const Dashboard = () => {
             <div className="welcome_profile">
               <img alt="profile.png" src={ProfileImage} className="welcomeimg" />
               <div className="username">
-                <h2>Welcome Rebecca,</h2>
+                <h2>Welcome {userName},</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               </div>
             </div>
