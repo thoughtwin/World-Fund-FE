@@ -1488,7 +1488,7 @@ button:focus{
     .navbar-collapse{
         overflow: hidden;
         /*top: 45px;*/
-        top: 68px;
+        top: 60px;
         position: fixed;
         height: calc(100vh - 30px)!important;
         background: #000;
@@ -1500,12 +1500,27 @@ button:focus{
         display: block!important;
         visibility: hidden;
       }
+      .navbar-toggler-icon{
+          margin-top: 10px;
+      }
+      .navbar-brand>img{
+          width: 100px;
+      }
+      .fixed_header{
+        position: fixed !important;
+        background: #000 !important;
+        width: 100%;
+        margin: -14px;
+        height: 74px;
+        z-index: 99;
+      }
       .navbar-collapse.in{
         left: 0vw!important;
         transition: ease all .5s;
         visibility: visible;
         z-index: 99;
       }
+      
       .navbar-nav.homemenulist{
         width: auto;
         margin: 40px 10px 10px 35px;
@@ -1558,7 +1573,7 @@ button:focus{
         margin: 0 auto;
     }
     .banner_Container h1{
-        margin-top: 55px;
+        margin-top:100px;
         font-size: 30px;
         line-height: 34px;
     }
