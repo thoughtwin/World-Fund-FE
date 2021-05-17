@@ -238,7 +238,7 @@ class Home extends React.Component {
         </div>
         <div className="container row why_choose container_row">
           <div className="col-md-7">
-            <h2 className="section_heading">Why choose us</h2>
+            <h2 className="section_heading pb-5">Why choose us</h2>
             <p className="section_content">World Funds strives to be worthy of our client’s trust by
             providing them with services which are economically
             beneficial to them and to create awareness regarding
@@ -322,3 +322,4 @@ class Home extends React.Component {
   }
 }
 export default Home;
+

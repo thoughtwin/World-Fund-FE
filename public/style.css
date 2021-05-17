@@ -5,8 +5,8 @@
       url(font/sf-fonts/SFProDisplay-Medium.ttf) format("truetype"),
       url(font/sf-fonts/SFProDisplay-Semibold.ttf) format("truetype"),
       url(font/sf-fonts/SFProDisplay-Bold.ttf) format("truetype");
-  } */
-  /* body {
+  }
+  body {
     font-family: SF Pro Display;
   } */
 
@@ -593,6 +593,7 @@ ul.nav.nav-tabs.tabbing_list {
     font-size: 30px;
     margin-bottom: 100px;
     /* font-family: SF Pro Light; */
+    line-height: 36px;
 }
 .container_row{
     margin: 0 auto!important;
@@ -980,7 +981,8 @@ p.last_diposit{
     display: inline-block;
     font-size: 12px;
     color: #70798C;
-    font-family: SF Pro Light;
+    /* font-family: SF Pro Light; */
+    margin-right: 10px;
 }
 .chat_btns p img{
     width: 40%;
@@ -1498,7 +1500,7 @@ button:focus{
         display: block!important;
         visibility: hidden;
       }
-      .navbar-collapse.show{
+      .navbar-collapse.in{
         left: 0vw!important;
         transition: ease all .5s;
         visibility: visible;

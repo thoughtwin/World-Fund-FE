@@ -1023,7 +1023,7 @@ p.last_diposit{
     width: 64%;
     margin: 0 auto;
     text-align: center;
-    margin-top: 19px;
+    /*margin-top: 19px;*/
 }
 .homemenulist li{
     display: inline-block;

@@ -7,7 +7,7 @@ const HomeNav = () => {
     <>
       <nav class="navbar navbar-expand-md navbar-inverse fixed_header">
       <Link className="navbar-brand" to="/home"><img src={Logo} /></Link>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader">
+        <button class="navbar-toggler" aria-controls="navbarHeader" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarHeader">
@@ -28,3 +28,4 @@ const HomeNav = () => {
   )
 }
 export default HomeNav;
+
