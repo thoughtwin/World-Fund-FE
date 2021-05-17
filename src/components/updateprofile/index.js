@@ -42,6 +42,7 @@ const UpdateProfile = () => {
 
   const onSubmit = async (e, i) => {
     i.preventDefault();
+    const tokens = JSON.parse(localStorage.getItem("tokens"))
     let data = { userName, pinCode, invitedBy, tokens }
     await AuthService.updateUser(data).then((userResult) => {
       console.log(userResult)
@@ -66,7 +67,7 @@ const UpdateProfile = () => {
 
   return (
     <>
-      <form onSubmit={(e,i) => onSubmit(e, i), handleSubmit(onSubmit)}>
+      <form onSubmit={(e, i) => onSubmit(e, i), handleSubmit(onSubmit)}>
         <div className="row">
           <div className="col-md-4 form-group tabbing_form">
             <label htmlFor="email">Username</label>
@@ -85,7 +86,7 @@ const UpdateProfile = () => {
                 }
               })}
               onChange={e => onInputChange(e)} />
-              <span className="form-text text-danger">{errors.userName && errors.userName.message}</span>
+            <span className="form-text text-danger">{errors.userName && errors.userName.message}</span>
           </div>
           <div className="col-md-4 form-group tabbing_form">
             <label htmlFor="pwd">Pin Code</label>
@@ -100,7 +101,7 @@ const UpdateProfile = () => {
                 required: "this field is required",
               })}
               onChange={e => onInputChange(e)} />
-              <span className="form-text text-danger">{errors.pinCode && errors.pinCode.message}</span>
+            <span className="form-text text-danger">{errors.pinCode && errors.pinCode.message}</span>
           </div>
           <div className="col-md-4 form-group tabbing_form">
             <label htmlFor="pwd">I was invited by</label>
@@ -115,7 +116,7 @@ const UpdateProfile = () => {
               //   required: "this field is required",
               // })}
               onChange={e => onInputChange(e)} />
-              {/* <span className="form-text text-danger">{errors.invitedBy && errors.invitedBy.message}</span> */}
+            {/* <span className="form-text text-danger">{errors.invitedBy && errors.invitedBy.message}</span> */}
           </div>
         </div>
         <button type="submit" className="settingsave_btn">Save</button>

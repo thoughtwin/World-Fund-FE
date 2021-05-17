@@ -42,7 +42,7 @@ const Signup = () => {
         <p className="detail_proceed signup_content">Please enter your details to proceed.</p>
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="form-group signup_form">
-            <label htmlFor="userName">username</label>
+            <label htmlFor="userName">Username</label>
             <input
               type="text"
               className="form-control"
@@ -93,7 +93,7 @@ const Signup = () => {
             <span className="form-text text-danger">{errors.password && errors.password.message}</span>
           </div>
           <div className="form-group signup_form">
-            <label htmlFor="pwd">confirm Password</label>
+            <label htmlFor="pwd">Confirm Password</label>
             <input
               type="password"
               className="form-control"
@@ -109,7 +109,7 @@ const Signup = () => {
           </div>
           <div className="row">
             <div className="col-md-6 form-group signup_form pincode_div">
-              <label htmlFor="pwd">pin code</label>
+              <label htmlFor="pwd">Pin code</label>
               <input
                 type="text"
                 className="form-control"
@@ -122,7 +122,7 @@ const Signup = () => {
               <span className="form-text text-danger">{errors.pinCode && errors.pinCode.message}</span>
             </div>
             <div className="col-md-6 form-group signup_form pincode_div">
-              <label htmlFor="pwd">confirm pin code</label>
+              <label htmlFor="pwd">Confirm pin code</label>
               <input
                 type="text"
                 className="form-control"
@@ -138,7 +138,7 @@ const Signup = () => {
             </div>
           </div>
           <div className="form-group signup_form">
-            <label htmlFor="pwd">i was invited by</label>
+            <label htmlFor="pwd">I was invited by</label>
             <input
               type="email"
               className="form-control"
