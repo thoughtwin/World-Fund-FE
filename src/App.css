@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'SF Pro Display';
+    src: 
+         url(./assets/font/sf-fonts/SFProDisplay-Regular.ttf) format("truetype"),
+         url(./assets/font/sf-fonts/SFProDisplay-Light.ttf) format("truetype"),
+         url(./assets/font/sf-fonts/SFProDisplay-Medium.ttf) format("truetype"),
+         url(./assets/font/sf-fonts/SFProDisplay-Semibold.ttf) format("truetype");
+  }
+  body {
+    font-family: 'SF Pro Display'!important;
+    overflow-x: hidden;
+}

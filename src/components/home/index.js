@@ -51,7 +51,7 @@ class Home extends React.Component {
         </div>
         <div className="securely_container" style={{backgroundImage:`url(${Web_bg})`}}>
           <h2 className="section_heading">Invest securely with our plans</h2>
-          <p className="section_content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />Sed volutpat vulputate ut
+          <p className="section_content pt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br />Sed volutpat vulputate ut
         fermentum tristique fermentum posuere.</p>
           <div className="container row container_row">
             <div className="col-md-4">

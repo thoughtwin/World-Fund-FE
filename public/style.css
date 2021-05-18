@@ -5,16 +5,16 @@
       url('sf-fonts/SFProDisplay-Medium.ttf') format('truetype'),
       url('sf-fonts/SFProDisplay-Semibold.ttf') format('truetype'),
       url('sf-fonts/SFProDisplay-Bold.ttf') format('truetype');
+  } */
+
+
+  @font-face {
+    font-family: 'SF Pro Display';
+    src: url(sf-fonts/SFProDisplay-Light.ttf) format("truetype");
   }
   body {
     font-family: 'SF Pro Display'!important;
-  } */
-
-  /* @font-face {
-    font-family: SF Pro Light;
-    src: url(font/sf-fonts/SFProDisplay-Light.ttf) format("truetype");
-  } */
-  body{
+  
     overflow-x: hidden;
 }
 .login_content{
@@ -87,6 +87,10 @@
     border-radius: 50px;
     margin-top: 50px;
     color: #000;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
 }
 .loginbtn:focus{
     outline: none;
@@ -673,7 +677,6 @@ ul.nav.nav-tabs.tabbing_list {
 .banner_Container h1{
     font-size: 60px;
     margin-top: 150px;
-    /* font-family: SF Pro Light; */
     font-weight: 600;
     font-style: normal;
     line-height: 70px;
@@ -783,6 +786,10 @@ ul.nav.nav-tabs.tabbing_list {
 }
 .recent_transactions h2{
     color:#01143E;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 64px;
 }
 .recent_transactions p{
     color: #70798C;
@@ -1160,7 +1167,7 @@ p.last_diposit{
     background-image: url(../src/assets/images/aboutusbanner.png);
 }
 .aboutus_banner p{
-    width: 605px;
+    width: 607px;
 }
 .blackimg{
     display:none
@@ -1530,7 +1537,7 @@ button:focus{
 .graph_container img{
     width: 100%;
 }
-.about_uscontainer .section_heading{
+.about_uscontainer .introducing_container h2{
     padding-top: 0;
 }
 .about_uscontainer .diposit_text .last_deposittablehead{
@@ -1542,7 +1549,9 @@ button:focus{
 .Invest_Nowbuttondiv{
     width: 100%;
 }
-
+.we_havetext{
+    padding-top: 20px;
+}
 
 
 
@@ -1683,6 +1692,8 @@ button:focus{
         margin-top: 32px;
         margin-bottom: 0;
         padding-bottom: 0px;
+        font-size: 27px;
+        line-height: 30px;
     }
     .investing_div button{
         font-size: 15px;
@@ -1745,6 +1756,7 @@ button:focus{
     }
     .loginpass p{
         padding-right: 60px;
+        font-size: 13px;
     }
     .loginleft_content img{
         height: 60px;
@@ -1764,16 +1776,18 @@ button:focus{
         width: 51px;
     }
     p.we_havetext{
-        padding-top: 50px;
+        padding-top: 35%;
     }
     .management_card{
         width: 100%;
+        border: 1px solid;
+        margin-bottom: 30px;
     }
     .introducing_container h2{
         font-size: 25px;
     }
     .introducing_container p{
-        font-size: 18px;
+        font-size: 18px ;
     }
     .Invest_Nowbutton{
         margin-bottom: 30px;
@@ -1799,12 +1813,32 @@ button:focus{
     }
     .create_accountdiv{
         margin-bottom: 25px;
+        width: 100%;
     }
+     .bitcoin img{
+        width: 25px;
+    }
+     .table.bicoin_table table td{
+        font-size: 14px;
+    }
+     .bitcoin p{
+        font-size: 13px;
+    }
+    .bitcoin p span{
+        font-size: 10px;
+    }
+    .home_maincontainer .container{
+        margin:0;
+    }
+    
   }
  
   @media screen and (max-width: 320px) {
     .invest_nowbtn, .learn_morebtn{
         font-size: 11px;
+    }
+    .recent_transactions h2{
+        font-size: 24px;
     }
     .loginleft_content{
         padding: 0 0px 18px 15px;
@@ -1827,9 +1861,6 @@ button:focus{
     .total_account_div h4{
         font-size: 28px;
     }
-    .why_choose p{
-        margin-bottom: 20px;
-    }
     .footer ul{
         padding-left: 0;
     }
@@ -1845,6 +1876,27 @@ button:focus{
     }
     .bitcoin p{
         font-size: 14px;
+    }
+    .create_accountdiv h6{
+        font-size: 20px;
+    }
+    .introducing_container h2{
+        font-size: 24px;
+    }
+    .Investment_heading, .acquaintance_container h4{
+        font-size: 30px;
+    }
+    .create_accountdiv span {
+        font-size: 40px;
+    }
+     .table.bicoin_table table td{
+        font-size: 10px;
+    }
+     .bitcoin img{
+        width: 25px;
+    }
+    .bitcoin p {
+        font-size: 9px;
     }
   }
   @media (min-width: 768px) and (max-width:995px) {
@@ -1929,10 +1981,35 @@ button:focus{
     .loginleft_content{
         margin-left: 27px;
     }
+    .management_card{
+        width: 100%;
+        border: 1px solid;
+        margin-bottom: 35px;
+    }
+    .create_accountdiv{
+        width: 100%;
+        height: 345px;
+    }
+    .about_uscontainer .management_container{
+        height: 960px;
+    }
+    .about_uscontainer .recent_transactions h2{
+        font-size: 40px;
+        line-height: 50px;
+    }
   }
   @media (min-width: 1022px) and (max-width:1024px) {
     .graph_container img{
         width: 825px;
+    }
+    .create_accountdiv{
+        width: 100%;
+    }
+    .management_card{
+        width: 100%;
+        height: 310px;
+        margin-bottom: 40px;
+        border: 1px solid;
     }
     .premiumplan_img {
         width: 50px;
@@ -1967,5 +2044,16 @@ button:focus{
     }
     .login_content{
         background-size: 100% 100%;
+    }
+}
+@media (min-width: 400px) and (max-width:767px) {
+    .assets_margin{
+        margin-top: 60px!important;
+    }
+
+}
+@media (min-width: 450px) and (max-width:767px) {
+    p.we_havetext {
+        padding-top: 1%;
     }
 }

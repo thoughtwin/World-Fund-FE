@@ -40,32 +40,32 @@ const About = () => {
 
       <div className="recent_transactions management_container" style={{ backgroundImage: `url(${management_containerbg})` }}>
         <div className="container">
-          <h2 className="section_heading">We are Asset Management Fund, <br />based on artificial intelligence.</h2>
+          <h2 className="section_heading assets_margin">We are Asset Management Fund, <br />based on artificial intelligence.</h2>
           <p className="section_content we_havetext">We have a huge range of tasks, but we solve each of them  as efficiently as<br />
                      possible. Create a free account, to assess our capabilities!</p>
           <div className="row">
-            <div className="col-md-3">
+            <div className="col-lg-3 col-md-6">
               <div className="management_card">
                 <img src={abouticonblack1} className="blackimg" />
                 <img src={abouticongreen1} className="greenimg" />
                 <p>INNOVATIVE AI World funds TRADING DESK SYSTEM</p>
               </div>
             </div>
-            <div className="col-md-3">
+            <div className="col-lg-3 col-md-6">
               <div className="management_card">
                 <img src={abouticonblack2} className="blackimg" />
                 <img src={abouticongreen2} className="greenimg" />
                 <p>FINANCIAL MANAGEMENT FROM ANYWHERE IN THE WORLD</p>
               </div>
             </div>
-            <div className="col-md-3">
+            <div className="col-lg-3 col-md-6">
               <div className="management_card">
                 <img src={abouticonblack3} className="blackimg" />
                 <img src={abouticongreen3} className="greenimg" />
                 <p>INSTANT DEPOSIT IN ANY OF THE CURRENCIES*</p>
               </div>
             </div>
-            <div className="col-md-3">
+            <div className="col-lg-3 col-md-6">
               <div className="management_card">
                 <img src={abouticonblack4} className="blackimg" />
                 <img src={abouticongreen4} className="greenimg" />
