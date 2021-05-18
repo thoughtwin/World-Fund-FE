@@ -13,7 +13,7 @@ import aboutgraph from '../../assets/images/aboutgraph.png';
 import tableIcon1 from '../../assets/images/tableIcon1.png';
 import dash from '../../assets/images/dash.png';
 import aboutusbanner from '../../assets/images/aboutusbanner.png';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import Ethereum from '../../assets/images/Ethereum.png';
 import litecoin3 from '../../assets/images/litecoin3.png';
 import Ripple from '../../assets/images/Ripple.png';
@@ -28,9 +28,9 @@ import HomeNav from '../homenav';
 const About = () => {
   return (
     <div className="home_maincontainer">
-      <div className="header_banner aboutus_banner" style={{backgroundImage:`url(${aboutusbanner})`}}>
+      <div className="header_banner aboutus_banner" style={{ backgroundImage: `url(${aboutusbanner})` }}>
         <div className="container">
-          <HomeNav/>
+          <HomeNav />
           <div className="banner_Container">
             <h1>Who are we?</h1>
             <p>We are a financial invstment company where you<br /> can be the part of its investment community worldwide.</p>
@@ -38,7 +38,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="recent_transactions management_container" style={{backgroundImage:`url(${management_containerbg})`}}>
+      <div className="recent_transactions management_container" style={{ backgroundImage: `url(${management_containerbg})` }}>
         <div className="container">
           <h2 className="section_heading">We are Asset Management Fund, <br />based on artificial intelligence.</h2>
           <p className="section_content">We have a huge range of tasks, but we solve each of them  as efficiently as<br />
@@ -84,7 +84,7 @@ const About = () => {
         <div className="aboutusgraph">
           <img src={aboutgraph} />
         </div>
-        <div className="total_acoounts innovative_container" style={{backgroundImage:`url(${aboutBase})`}}>
+        <div className="total_acoounts innovative_container" style={{ backgroundImage: `url(${aboutBase})` }}>
           <div className="container row container_row">
             <div className="col-md-6">
               <h4 className="Investment_heading">Investment is a Difficult task.<br />
@@ -133,7 +133,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="world_belongs" style={{backgroundImage:`url(${Background_globe})`}}>
+      <div className="world_belongs" style={{ backgroundImage: `url(${Background_globe})` }}>
         <div className="container row container_row">
           <h4>The whole world belongs<br /><span> only to You!</span></h4>
           <p>Find out what unites <span>19,038</span> partners around the world and how they earned <span>1,225,300</span> dollars due to it.</p>
@@ -184,7 +184,7 @@ const About = () => {
 
 
 
-      <div className="footer_container" style={{backgroundImage:`url(${Footer_wave})`}}>
+      <div className="footer_container" style={{ backgroundImage: `url(${Footer_wave})` }}>
         <div className="row container container_row footer">
           <div className="col-md-3 margin_bottom">
             <img src={Logo} />

@@ -9,13 +9,14 @@ const Dashboard = () => {
   const [userName, setUserName] = useState('');
 
   useEffect(() => {
-    const name = JSON.parse(localStorage.getItem('tokens'));
-    setUserName(name.userName);
+    const name = JSON.parse(localStorage.getItem('userName'));
+    // console.log("name", name);
+    setUserName(name);
   }, [userName]);
 
   return (
     <>
-      <TopNav />
+      <TopNav userName={userName} />
       <div className="dashboard_content">
         <SideNav />
         <div className="dashboardmain_content">
