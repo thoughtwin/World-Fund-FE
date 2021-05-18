@@ -1830,6 +1830,9 @@ button:focus{
     .home_maincontainer .container{
         margin:0;
     }
+    .why_choose p{
+        margin-bottom: 0;
+    }
     
   }
  
