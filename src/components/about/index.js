@@ -27,7 +27,7 @@ import Background_globe from '../../assets/images/Background_globe.png'
 import HomeNav from '../homenav';
 const About = () => {
   return (
-    <div className="home_maincontainer">
+    <div className="home_maincontainer about_uscontainer">
       <div className="header_banner aboutus_banner" style={{backgroundImage:`url(${aboutusbanner})`}}>
         <div className="container">
           <HomeNav/>
@@ -41,7 +41,7 @@ const About = () => {
       <div className="recent_transactions management_container" style={{backgroundImage:`url(${management_containerbg})`}}>
         <div className="container">
           <h2 className="section_heading">We are Asset Management Fund, <br />based on artificial intelligence.</h2>
-          <p className="section_content">We have a huge range of tasks, but we solve each of them  as efficiently as<br />
+          <p className="section_content we_havetext">We have a huge range of tasks, but we solve each of them  as efficiently as<br />
                      possible. Create a free account, to assess our capabilities!</p>
           <div className="row">
             <div className="col-md-3">
@@ -137,15 +137,20 @@ const About = () => {
         <div className="container row container_row">
           <h4>The whole world belongs<br /><span> only to You!</span></h4>
           <p>Find out what unites <span>19,038</span> partners around the world and how they earned <span>1,225,300</span> dollars due to it.</p>
+          <div className="Invest_Nowbuttondiv">
           <button className="Invest_Nowbutton">Invest Now</button>
+          </div>
         </div>
       </div>
 
       <div className="acquaintance_container">
         <div className="container row container_row">
-          <h4>Start your acquaintance<br />
-                    with simple investments in <span> 3 simple steps.</span></h4>
+          <div className="col-md-12">
+          <h4>Start your acquaintance<br />with simple investments in <span> 3 simple steps.</span></h4>
           <p className="creatingaccounttext">Investing with us is very easy, see for yourself,<span> by creating a free account.</span></p>
+          </div>
+          
+         
           <div className="col-md-4">
             <div className="create_accountdiv">
               <span>01</span>

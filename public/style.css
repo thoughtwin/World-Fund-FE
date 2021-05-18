@@ -1,13 +1,13 @@
 /* @font-face {
-    font-family: SF Pro Display;
-    src: url(font/sf-fonts/SFProDisplay-Regular.ttf) format("truetype"),
-      url(font/sf-fonts/SFProDisplay-Light.ttf) format("truetype"),
-      url(font/sf-fonts/SFProDisplay-Medium.ttf) format("truetype"),
-      url(font/sf-fonts/SFProDisplay-Semibold.ttf) format("truetype"),
-      url(font/sf-fonts/SFProDisplay-Bold.ttf) format("truetype");
+    font-family: 'SF Pro Display';
+    src: url('sf-fonts/SFProDisplay-Regular.ttf') format('truetype'),
+      url('sf-fonts/SFProDisplay-Light.ttf') format('truetype'),
+      url('sf-fonts/SFProDisplay-Medium.ttf') format('truetype'),
+      url('sf-fonts/SFProDisplay-Semibold.ttf') format('truetype'),
+      url('sf-fonts/SFProDisplay-Bold.ttf') format('truetype');
   }
   body {
-    font-family: SF Pro Display;
+    font-family: 'SF Pro Display'!important;
   } */
 
   /* @font-face {
@@ -1265,7 +1265,7 @@ p.last_diposit{
     background: #00F69B;
     border: none;
     font-size: 19px;
-    margin-top: 50px;
+    margin-top: 40px;
     /* font-family: SF Pro Light!important; */
 }
 .acquaintance_container{
@@ -1273,9 +1273,13 @@ p.last_diposit{
     margin-bottom: 100px;
 }
 .dotline{
+    /* position: absolute;
+    top: 47%;
+    right: -46px; */
     position: absolute;
     top: 47%;
-    right: -46px;
+    right: -38px;
+    width: 83px;
 }
 .aboutusgraph {
     text-align: center;
@@ -1526,10 +1530,18 @@ button:focus{
 .graph_container img{
     width: 100%;
 }
-
-
-
-
+.about_uscontainer .section_heading{
+    padding-top: 0;
+}
+.about_uscontainer .diposit_text .last_deposittablehead{
+    padding: 22px 0px 8px 15px;
+}
+.about_uscontainer .table.bicoin_table table td{
+    padding: 14px 0px;
+}
+.Invest_Nowbuttondiv{
+    width: 100%;
+}
 
 
 
@@ -1688,7 +1700,10 @@ button:focus{
         padding-top: 50px;
     }
     .footer_container{
-        background: none;
+        background-size: 100% 50% ;
+        background-repeat: no-repeat ;
+        background-position: center bottom;
+        height: auto;
     }
     .margin_bottom{
         margin-bottom: 20px;
@@ -1734,7 +1749,57 @@ button:focus{
     .loginleft_content img{
         height: 60px;
     }
-    
+    .aboutusgraph img{
+        width: 100%;
+    }
+    .aboutus_banner p{
+        width: 100%;
+    }
+    .dotline{
+        right: 0;
+        transform: rotate(90deg);
+        left: 0;
+        margin: 0 auto;
+        top: 95%;
+        width: 51px;
+    }
+    p.we_havetext{
+        padding-top: 50px;
+    }
+    .management_card{
+        width: 100%;
+    }
+    .introducing_container h2{
+        font-size: 25px;
+    }
+    .introducing_container p{
+        font-size: 18px;
+    }
+    .Invest_Nowbutton{
+        margin-bottom: 30px;
+    }
+    .world_belongs{
+        padding: 19px;
+        margin: 48px 0 0 0;
+        height: auto;
+        text-align: center;
+    }
+    .world_belongs h4{
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .world_belongs p{
+        font-size: 20px;
+    }
+    .acquaintance_container h4{
+        font-size: 30px;
+    }
+    .creatingaccounttext{
+        font-size: 20px;
+    }
+    .create_accountdiv{
+        margin-bottom: 25px;
+    }
   }
  
   @media screen and (max-width: 320px) {
