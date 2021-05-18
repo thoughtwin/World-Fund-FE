@@ -22,7 +22,28 @@ const UpdateProfile = () => {
     setUser({ ...user, [e.target.name]: e.target.value });
   }
 
-  useEffect(async () => {
+
+  useEffect(() => {
+    getProfile();
+    // const getToken = JSON.parse(localStorage.getItem("tokens"))
+    // setToken({ token: getToken.token })
+    // await AuthService.getUser(getToken).then((userResult) => {
+    //   console.log(userResult)
+    //   if (userResult.status === 200) {
+    //     setUser({
+    //       userName: userResult.data.data.userName,
+    //       pinCode: userResult.data.data.pinCode,
+    //       invitedBy: userResult.data.data.invitedBy
+    //     })
+    //   }
+    // }).catch((error) => {
+    //   console.log(error);
+    //   swal('error', 'Internal Server Error', 'error')
+    // })
+  }, []);
+
+  const getProfile = async () => {
+    console.log("working");
     const getToken = JSON.parse(localStorage.getItem("tokens"))
     setToken({ token: getToken.token })
     await AuthService.getUser(getToken).then((userResult) => {
@@ -38,15 +59,17 @@ const UpdateProfile = () => {
       console.log(error);
       swal('error', 'Internal Server Error', 'error')
     })
-  }, []);
+  }
 
   const onSubmit = async (e, i) => {
     i.preventDefault();
     const tokens = JSON.parse(localStorage.getItem("tokens"))
     let data = { userName, pinCode, invitedBy, tokens }
     await AuthService.updateUser(data).then((userResult) => {
+      let userName = userResult.data.data.userName
       console.log(userResult)
       if (userResult.status === 200) {
+        localStorage.setItem("userName", JSON.stringify(userName));
         swal('success', userResult.data.message, 'success')
         setUser({
           userName: userResult.data.data.userName,
@@ -96,9 +119,14 @@ const UpdateProfile = () => {
               id="pwd"
               placeholder="anna-smith@mail.com"
               name="pinCode"
+              pattern="[0-9]*"
               value={pinCode}
               ref={register({
                 required: "this field is required",
+                minLength: {
+                  value: 6,
+                  message: "please enter valid pin code"
+                }
               })}
               onChange={e => onInputChange(e)} />
             <span className="form-text text-danger">{errors.pinCode && errors.pinCode.message}</span>

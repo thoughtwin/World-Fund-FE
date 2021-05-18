@@ -36,6 +36,7 @@ const App = (props) => {
 
   const setTokens = (data) => {
     localStorage.setItem("tokens", JSON.stringify(data));
+    localStorage.setItem("userName", JSON.stringify(data.userName));
     setAuthTokens(data);
   }
   return (

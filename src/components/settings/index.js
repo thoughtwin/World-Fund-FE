@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import TopNav from '../topnav';
 import SideNav from '../sidenav';
@@ -7,9 +7,16 @@ import UpdateWlt from '../updateWallet';
 import ChangePwd from '../changepassword';
 
 const Settings = () => {
+  const [userName, setUserName] = useState('');
+
+  useEffect(() => {
+    const name = JSON.parse(localStorage.getItem('userName'));
+    // console.log("name", name);
+    setUserName(name);
+  }, [userName]);
   return (
     <>
-      <TopNav />
+      <TopNav userName={userName} />
       <div className="dashboard_content">
         <SideNav />
         <div className="dashboardmain_content">
@@ -25,7 +32,7 @@ const Settings = () => {
           </ul>
           <div className="tab-content">
             <div id="home" className="tab-pane fade in active">
-              <UpdateProfile/>
+              <UpdateProfile />
             </div>
             <div id="menu1" className="tab-pane fade">
               <UpdateWlt />
