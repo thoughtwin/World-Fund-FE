@@ -32,7 +32,7 @@ const Signup = () => {
   }
 
   return (
-    <div className="login_content" style={{
+    <div className="login_content new_user_registration" style={{
       backgroundImage: `url(${signupLatest})`
     }}>
 
