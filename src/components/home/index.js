@@ -128,7 +128,7 @@ class Home extends React.Component {
             </div>
           </div>
           <div className="graph_container">
-            <div className="conatiner">
+            <div className="container">
               <img src={Graph} />
             </div>
           </div>

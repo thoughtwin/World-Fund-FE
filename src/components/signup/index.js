@@ -32,7 +32,7 @@ const Signup = () => {
   }
 
   return (
-    <div className="login_content" style={{
+    <div className="login_content new_user_registration" style={{
       backgroundImage: `url(${signupLatest})`
     }}>
 
@@ -157,7 +157,7 @@ const Signup = () => {
           <div className="checkbox remember_div">
             <label><input
               type="checkbox"
-              name="remember" /> Remember me</label>
+              name="remember" /> I have read <b>rules</b> and I <b>accept</b> them</label>
           </div>
           <button type="submit" className="create_accountbtn">Create a free account</button>
         </form>

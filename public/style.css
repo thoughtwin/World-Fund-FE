@@ -25,8 +25,15 @@
     background-repeat: no-repeat;
     background-color: #01143e;
 }
+.new_user_registration{
+    height: 100vh;
+    width: 100%;
+    min-height: 800px;
+}
 .loginscreen_bg{
     height: 100vh;
+    width: 100%;
+    min-height: 600px;
 }
 .login_content h1{
     font-size: 34px;
@@ -43,6 +50,23 @@
 .login_content label{
     color: #8798AD;
     font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.checkbox b{
+    color: #fff;
+    font-weight: normal;
+}
+.resetbtn button{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #000000;
+    height: 48px;
+    width: 200px;
 }
 .signup_form input{
     height: 41px;
@@ -84,6 +108,7 @@
 .loginleft_content{
     margin-left: 120px;
     padding-top: 70px;
+    padding-bottom: 20px;
 }
 .loginpass label{
     display: inline-block;
@@ -95,12 +120,20 @@
     color: #fff;
     cursor: pointer;
 }
-
-
+.checkbox.remember_div label{
+    text-transform: lowercase;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 22px;
+}
+.checkbox.remember_div input{
+    margin-top: 5px;
+}
 
 
 .user_registration{
-    margin-top: 16px!important;
+    margin-top: 20px!important;
 }
 .loginleft_content  form{
     width: 342px;
@@ -122,6 +155,10 @@
     border-radius: 50px;
     margin-top: 10px;
     color: #000;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
 }
 .create_accountbtn:focus{
     outline: none;
@@ -156,6 +193,8 @@
 .forgotpass_container label {
     color: #8798AD;
     font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
 }
 .resetbtn{
     text-align: center;
@@ -1484,6 +1523,22 @@ button:focus{
 .copyright{
     width: 70%!important;
 }
+.graph_container img{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 767px) {
     .navbar-collapse{
         overflow: hidden;
@@ -1551,22 +1606,29 @@ button:focus{
     .last_deposittablehead{
         padding: 30px 30px 2px 14px;
     }
-    
+    .form-text.text-danger{
+        padding-right: 40px;
+    }
     .login_content input{
         width: 287px;
     }
-    .loginleft_content{
-        margin-left: 18px;
-        padding: 0;
+    .checkbox input{
+        width: auto;
     }
-    .login_content h1{
-        font-size: 28px;
+    .loginleft_content{
+        margin: 0;
+        padding: 0 0px 18px 35px;
+        overflow: hidden;
+    }
+    .create_accountbtn{
+        width: 80%;
     }
     .loginleft_content img{
         padding-top: 35px;
     }
     .login_content h1{
-        margin-top: 50px;
+        margin-top: 28px;
+        font-size: 22px;
     }
     .forgotmain_container form{
         width: 330px;
@@ -1593,6 +1655,7 @@ button:focus{
         font-size: 18px;
         margin-bottom: 40px;
         padding: 10px;
+        line-height: 26px;
     }
     .basic_container{
         margin-bottom: 20px;
@@ -1605,7 +1668,9 @@ button:focus{
         padding: 16px 0 5px 0;
     }
     .recent_transactions h2{
-        margin-top: 35px;
+        margin-top: 32px;
+        margin-bottom: 0;
+        padding-bottom: 0px;
     }
     .investing_div button{
         font-size: 15px;
@@ -1641,9 +1706,6 @@ button:focus{
     .graph_container{
         padding: 15px;
     }
-    .graph_container img{
-        width: 260px;
-    }
     .arrow_container{
         right: 0px;
     }
@@ -1663,11 +1725,24 @@ button:focus{
     .copyright{
         width: auto!important;
     }
+    .login_content{
+        background-image: none !important;
+    }
+    .loginpass p{
+        padding-right: 60px;
+    }
+    .loginleft_content img{
+        height: 60px;
+    }
+    
   }
  
   @media screen and (max-width: 320px) {
     .invest_nowbtn, .learn_morebtn{
         font-size: 11px;
+    }
+    .loginleft_content{
+        padding: 0 0px 18px 15px;
     }
     .banner_Container h1{
         font-size: 25px;
@@ -1705,6 +1780,23 @@ button:focus{
     }
     .bitcoin p{
         font-size: 14px;
+    }
+  }
+  @media (min-width: 768px) and (max-width:995px) {
+    .recent_transactions{
+        height: auto;
+    }
+    .section_heading{
+        font-size: 45px;
+    }
+    .section_content{
+        font-size: 25px;
+    }
+    .login_content h1{
+        margin: 45px 0 0 0;
+    }
+    .login_content{
+        background-size: 100% 100%;
     }
   }
   @media (min-width: 768px) and (max-width:1022px) {
@@ -1766,6 +1858,12 @@ button:focus{
     div#navbarHeader{
         display: block!important;
     }
+    .login_content{
+        background-size: 100% 100%;
+    }
+    .loginleft_content{
+        margin-left: 27px;
+    }
   }
   @media (min-width: 1022px) and (max-width:1024px) {
     .graph_container img{
@@ -1801,5 +1899,8 @@ button:focus{
     }
     .copyright p{
         padding-bottom: 16px;
+    }
+    .login_content{
+        background-size: 100% 100%;
     }
 }
