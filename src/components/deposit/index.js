@@ -2,6 +2,7 @@ import React from 'react';
 import SideNav from '../sidenav';
 import TopNav from '../topnav';
 import emailArrow from '../../../src/assets/images/emailarrow.png';
+import './deposit.css';
 class Deposit extends React.Component {
   constructor(props) {
     super(props);
@@ -11,16 +12,16 @@ class Deposit extends React.Component {
     return (
       <div>
         <TopNav />
-        <div className="dashboard_content">
+        <div className="dashboard_content" id="wrapper">
           <SideNav />
-          <div className="dashboardmain_content">
+          <div className="dashboardmain_content page-content-wrapper">
             <div className="deposit_container">
               <h1 className="contentheading">Deposit</h1>
-              <button className="add_money">Add Money</button>
+              <button className="add_money diposite_addmoney">Add Money</button>
             </div>
 
 
-            <div className="dashboard_table deposit_table">
+            <div className="dashboard_table deposit_table table-responsive border-0">
               <div className="table">
                 <table className="table table-striped">
                   <tr className="table_heading">

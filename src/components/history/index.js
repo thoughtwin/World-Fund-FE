@@ -12,9 +12,9 @@ class History extends React.Component {
     return (
       <>
         <TopNav />
-        <div className="dashboard_content">
+        <div className="dashboard_content" id="wrapper">
           <SideNav />
-          <div className="dashboardmain_content">
+          <div className="dashboardmain_content page-content-wrapper">
             <div className="deposit_container">
               <h1 className="contentheading">History</h1>
               <div className="balance_div">

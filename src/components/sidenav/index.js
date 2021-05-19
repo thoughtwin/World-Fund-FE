@@ -14,8 +14,8 @@ class SideNav extends React.Component {
   }
   render() {
     return (
-      <div className="siderbar_container">
-        <ul>
+      <div className="siderbar_container" id="sidebar-wrapper">
+        <ul className="sidebar-nav">
           <li><img alt="dashboard.png" src={DashboardImg} /><Link to="/dashboard" style={{textDecoration: 'none'}}><span style={{color:"white"}}>Dashboard</span></Link></li>
           <li><img alt="Affiliate.png" src={AffiliateImg} /><Link to="/affiliate" style={{textDecoration: 'none'}}><span style={{color:"white"}}>Affiliate</span></Link></li>
           <li><img alt="deposit.png" src={DepositImg} /><Link to="/deposit" style={{textDecoration: 'none'}}><span style={{color:"white"}}>Deposit</span></Link></li>

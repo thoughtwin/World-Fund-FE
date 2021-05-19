@@ -4,6 +4,7 @@ import ProfileImage from '../../assets/images/profile.png';
 import DashboardImage from '../../assets/images/dashboardimg.png';
 import TopNav from '../topnav';
 import SideNav from '../sidenav';
+import './dashboard.css';
 
 const Dashboard = () => {
   const [userName, setUserName] = useState('');
@@ -17,9 +18,9 @@ const Dashboard = () => {
   return (
     <>
       <TopNav userName={userName} />
-      <div className="dashboard_content">
+      <div className="dashboard_content" id="wrapper">
         <SideNav />
-        <div className="dashboardmain_content">
+        <div className="dashboardmain_content page-content-wrapper">
           <h1 className="contentheading">Dashboard</h1>
           <div className="welcome_user">
             <div className="welcome_profile">
@@ -54,7 +55,7 @@ const Dashboard = () => {
               </div>
             </div>
           </div>
-          <div className="dashboard_table">
+          <div className="dashboard_table table-responsive border-0">
             <div className="table">
               <table className="table table-striped">
                 <thead>

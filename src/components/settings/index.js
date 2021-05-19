@@ -5,7 +5,7 @@ import SideNav from '../sidenav';
 import UpdateProfile from '../updateprofile';
 import UpdateWlt from '../updateWallet';
 import ChangePwd from '../changepassword';
-
+import './settings.css';
 const Settings = () => {
   const [userName, setUserName] = useState('');
 
@@ -17,15 +17,15 @@ const Settings = () => {
   return (
     <>
       <TopNav userName={userName} />
-      <div className="dashboard_content">
+      <div className="dashboard_content" id="wrapper">
         <SideNav />
-        <div className="dashboardmain_content">
+        <div className="dashboardmain_content page-content-wrapper">
           <div className="deposit_container">
             <h1 className="contentheading">Settings</h1>
             <p className="changepasstext">Change your account settings</p>
           </div>
 
-          <ul className="nav nav-tabs tabbing_list">
+          <ul className="nav nav-tabs tabbing_list setting_pagelist">
             <li className="active first_child"><Link data-toggle="tab" to="#home">General Settings</Link></li>
             <li><Link data-toggle="tab" to="#menu1">Finance Settings</Link></li>
             <li className="last_child"><Link data-toggle="tab" to="#menu2">Change password</Link></li>
