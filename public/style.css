@@ -1565,7 +1565,9 @@ button:focus{
 .we_havetext{
     padding-top: 20px;
 }
-
+.fqatabbing_container ul.nav.nav-tabs.tabbing_list{
+    border: 0;
+}
 
 
 
@@ -1588,6 +1590,13 @@ button:focus{
         margin: 0px;
         display: block!important;
         visibility: hidden;
+      }
+      .fqatabbing_container ul.nav.nav-tabs.tabbing_list{
+          justify-content: center;
+          width: 100%;
+      }
+      .fqatabbing_container .nav-tabs>li>a{
+          font-size: 18px;
       }
       .navbar-toggler-icon{
           margin-top: 10px;
@@ -1874,6 +1883,31 @@ button:focus{
     .management_card img.greenimg{
         height: 40px;
     }
+    .privacy_policycontainer{
+        background-size: 100% 100%;
+        position: relative;
+        top: 54px;
+    }
+    .privacy_policycontainer h2{
+        font-size: 30px;
+    }
+    .fqatabbing_container .nav-tabs>li>a {
+        width: 100%;
+        height: 100%;
+        line-height: 22px;
+    }
+    .faq_contenttext{
+        width: 100%;
+    }
+    .faq_contenttext{
+        line-height: 25px;
+    }
+    .fqatabbing_container .panel-default>.panel-heading a:after{
+        right: -34px;
+    }
+    .privacy_policycontainer p{
+        font-size: 25px;
+    }
     
   }
  
@@ -1967,8 +2001,23 @@ button:focus{
     .graph_container img{
         width: 568px;
     }
+    .fqatabbing_container .nav-tabs>li>a{
+        width: 100%;
+    }
+    .fqatabbing_container ul.nav.nav-tabs.tabbing_list{
+        width: 100%;
+        margin: 80px auto 50px;
+        text-align: center;
+        justify-content: center;
+    }
+    .privacy_policycontainer{
+        background-size: 100% 100%;
+    }
     .footer_email{
         padding: 0;
+    }
+    .privacy_policycontainer h2{
+        font-size: 45px;
     }
     .world_belongs h4{
         padding: 10px 42% 0px 0px;
@@ -2066,6 +2115,15 @@ button:focus{
     }
     p.vta_plateformtext{
         padding: 0px 25px;
+    }
+    .fqatabbing_container .nav-tabs>li>a{
+        width: 100%;
+    }
+    .fqatabbing_container ul.nav.nav-tabs.tabbing_list{
+        width: 100%;
+        margin: 80px auto 50px;
+        text-align: center;
+        justify-content: center;
     }
     .world_belongs h4{
         padding: 10px 42% 0px 0px;

@@ -240,7 +240,7 @@ const Faq = () => {
             </ul>
           </div>
           <div className="col-md-2 margin_bottom">
-            <ul>
+            <ul className="footer_email">
               <li className="footer_emailicon"><i className="fa fa-envelope"></i>info@cia.com</li>
               <li><span className="footericon"><i className="fa fa-facebook-f"></i></span><span className="footericon_paper"><i className="fa fa-paper-plane"></i></span></li>
             </ul>
