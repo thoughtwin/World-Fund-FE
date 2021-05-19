@@ -1,0 +1,47 @@
+/* ------------- dashboard-------------------- */
+.dasboard_navbar .toggle-icon {
+    color: #fff;
+    font-size: 22px;
+    padding: 5px 0px 5px 19px;
+    cursor: pointer;
+    vertical-align: middle;
+    margin-top: 20px;
+}
+.header_dashboard{
+    height: 71px;
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+}
+
+
+
+
+
+
+/* ================================ */
+@media only screen and (max-width: 767px) {
+    .top_headerinline li{
+        padding: 0;
+    }
+    .top_headerinline{
+        float: right;
+    }
+    .dasboard_navbar .toggle-icon{
+        padding: 0;
+    }
+    .dasboard_navbar .navbar-header{
+        display: inline-flex;
+    }
+}
+
+ 
+@media screen and (max-width: 320px) {
+    img.dashboardheader{
+        width: 30px;
+    }
+    .rebecca_profilelist a{
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
