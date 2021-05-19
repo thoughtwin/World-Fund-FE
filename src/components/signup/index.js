@@ -115,7 +115,7 @@ const Signup = () => {
                 className="form-control"
                 id="pwd"
                 placeholder="******"
-                name="PinCode"
+                name="pinCode"
                 pattern="[0-9]*"
                 ref={register({
                   required: "this field is required"
