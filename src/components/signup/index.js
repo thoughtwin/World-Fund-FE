@@ -116,6 +116,7 @@ const Signup = () => {
                 id="pwd"
                 placeholder="******"
                 name="pinCode"
+                pattern="[0-9]*"
                 ref={register({
                   required: "this field is required"
                 })} />
@@ -129,6 +130,7 @@ const Signup = () => {
                 id="pwd"
                 placeholder="******"
                 name="confirmPinCode"
+                pattern="[0-9]*"
                 ref={register({
                   required: "this field is required",
                   validate: value =>
