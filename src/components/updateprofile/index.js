@@ -117,7 +117,7 @@ const UpdateProfile = () => {
               type="text"
               className="form-control"
               id="pwd"
-              placeholder="anna-smith@mail.com"
+              placeholder="******"
               name="pinCode"
               pattern="[0-9]*"
               value={pinCode}
