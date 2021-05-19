@@ -80,7 +80,7 @@ const About = () => {
       <div className="securely_container introducing_container">
         <h2 className="section_heading">Introducing you VTU -<span> World Funds Turbo Unit.</span><br />
                 A revolutionary financial instrument.</h2>
-        <p className="section_content">VTU units are the internal currency of the VIA platform. Each participant of the VIA platform has the opportunity to<br /> purchase VTU units by creating a deposit, or place a purchase order on the internal VTU exchange.</p>
+        <p className="section_content vta_plateformtext">VTU units are the internal currency of the VIA platform. Each participant of the VIA platform has the opportunity to<br /> purchase VTU units by creating a deposit, or place a purchase order on the internal VTU exchange.</p>
         <div className="aboutusgraph">
           <img src={aboutgraph} />
         </div>
@@ -219,7 +219,7 @@ const About = () => {
             </ul>
           </div>
           <div className="col-md-2 margin_bottom">
-            <ul>
+            <ul className="footer_email">
               <li className="footer_emailicon"><i className="fa fa-envelope"></i>info@cia.com</li>
               <li><span className="footericon"><i className="fa fa-facebook-f"></i></span><span className="footericon_paper"><i className="fa fa-paper-plane"></i></span></li>
             </ul>
