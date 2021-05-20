@@ -120,6 +120,7 @@ const UpdateProfile = () => {
               placeholder="******"
               name="pinCode"
               pattern="[0-9]*"
+              minlength="6" maxlength="6"
               value={pinCode}
               ref={register({
                 required: "this field is required",
