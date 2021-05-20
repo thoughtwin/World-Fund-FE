@@ -265,7 +265,7 @@ class Home extends React.Component {
             <img src={Rocket} />
           </div>
           <div className="col-md-9 investing_div">
-            <h4>Ready to Start Investing?</h4>
+            <h4 className="pt-xl-0 pt-lg-0 pt-md-0 mt-5">Ready to Start Investing?</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin congue in morbi massa non platea.
             Interdum ac in placerat vel. Enim odio felis adipiscing amet, condimentum ac sed pulvinar sit.
             Nisl, amet, ac etiam tortor, non quis risus. Feugiat eu, dictum blandit neque egestas eget et urna,

@@ -13,7 +13,9 @@
     width: 100%;
     z-index: 9;
 }
-
+.header_dashboard .navbar-toggler{
+    display: none;
+}
 
 
 
@@ -33,7 +35,7 @@
     .dasboard_navbar .navbar-header{
         display: inline-flex;
     }
-    /* .sidebar_newcollapse .navbar-collapse{
+    .sidebar_newcollapse .navbar-collapse{
         overflow: hidden;
         top: 60px;
         position: fixed;
@@ -57,7 +59,13 @@
       }
       #sidebar-wrapper{
           margin-left: 0!important;
-      } */
+      }
+      .header_dashboard .navbar-toggler{
+        display: block;
+        margin: -12px;
+    }
+    
+    
 }
 
  
