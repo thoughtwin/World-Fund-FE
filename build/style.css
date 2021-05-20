@@ -14,7 +14,6 @@
   }
   body {
     font-family: 'SF Pro Display'!important;
-  
     overflow-x: hidden;
 }
 .login_content{
@@ -211,6 +210,7 @@ img.dashboardheader {
     border-radius: 50px;
     width: 40px;
 }
+
 .navbar{
     display: block!important;
     flex-wrap: inherit!important;
@@ -393,8 +393,9 @@ span.caret {
     color: #A3B0CC;
 }
 .dashboard_table table td img{
-    width: 10%;
+    width: auto;
     margin-right: 10px;
+    border-radius: 5px;
 }
 .dashboard_table table td{
     color: #fff;
