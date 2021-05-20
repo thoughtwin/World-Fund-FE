@@ -84,10 +84,41 @@
         left: -53px;
         box-shadow: 0px 0px 8px 0px rgba(114, 112, 113, 0.6) !important;
         top: 65px;
+        background-color: #fff !important;
     }
    
 }
-
+@media (min-width: 768px) and (max-width:1022px) {
+    .sidebar_newcollapse .navbar-collapse{
+        overflow: hidden;
+        top: 60px;
+        position: fixed;
+        height: calc(100vh - 30px)!important;
+        background: #01143E;
+        left: -100vw!important;
+        width: 100%!important;
+        transition: ease all .5s;
+        padding: 0px;
+        margin: 0px;
+        display: block!important;
+        visibility: hidden;
+      }
+      .sidebar_newcollapse .navbar-collapse.in{
+        left: 0vw!important;
+        transition: ease all .5s;
+        visibility: visible;
+        z-index: 99;
+        width: 220px !important;
+        overflow: hidden;
+      }
+      #sidebar-wrapper{
+          margin-left: 0!important;
+      }
+      .header_dashboard .navbar-toggler{
+        display: block;
+        margin: 22px 0px 0px 0px;
+    }
+  }
  
 @media screen and (max-width: 320px) {
     img.dashboardheader{
@@ -96,5 +127,16 @@
     .rebecca_profilelist a{
         padding-left: 0;
         padding-right: 0;
+    }
+    #sidebar-wrapper {
+        top: 61px;
+        border: 0;
+    }
+    .navbar-brand>img {
+        width: 80px;
+    }
+    .header_dashboard .navbar-toggler {
+        display: block;
+        margin: -4px 0px 0px -14px;
     }
 }

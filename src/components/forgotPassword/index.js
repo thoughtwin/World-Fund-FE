@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import AuthService from "../../services/AuthService";
 import LogoImage from '../../assets/images/Logo.png'
-
+import './forgotPassword.css';
 const Forgotpassword = () => {
   const { register, handleSubmit, errors } = useForm({
     mode: "onTouched"
@@ -26,7 +26,7 @@ const Forgotpassword = () => {
   }
 
   return (
-    <div className="forgotmain_container">
+    <div className="forgotmain_container forgot_passwordpage">
       <img alt="Logo.png" src={LogoImage} style={{
         margin: "30px"
       }} />
