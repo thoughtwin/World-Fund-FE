@@ -1,0 +1,41 @@
+.history_page td{
+    height: 60px;
+    line-height: 60px;
+    border-top: 1px solid #70798C;
+    padding: 0 10px;
+}
+.history_page th{
+    border: 0;
+}
+
+
+
+
+
+
+
+/* =============================================== */
+
+@media only screen and (max-width: 767px) {
+    .history_page .balance_div{
+        font-size: 18px;
+        float: right;
+        margin-top: 16%;
+    }
+    .history_page .balance_div li a{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 320px) {
+
+}
+@media (min-width: 768px) and (max-width:1022px) {
+    .history_balance{
+        margin-top: 12%;
+    }
+}
+@media (min-width: 1022px) and (max-width:1024px) {
+ .history_balance{
+     margin-top: 10%;
+ }
+}

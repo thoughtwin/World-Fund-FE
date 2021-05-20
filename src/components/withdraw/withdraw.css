@@ -1,0 +1,72 @@
+.withdraw_page td{
+    height: 60px;
+    line-height: 60px;
+    border-top: 1px solid #70798C;
+    padding: 0 10px;
+}
+.withdraw_page th{
+    border: 0;
+}
+.withdraw_page .withdrawl_btn{
+    border: 2px solid #00F29D;
+    box-sizing: border-box;
+    border-radius: 100px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #00F29D;
+    background-color: transparent;
+    margin-top:0;
+    height: 48px;
+    width: 200px;
+    padding: 0;
+}
+.withdraw_page .send_request{
+    box-sizing: border-box;
+    border-radius: 100px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: capitalize;
+    margin-top:0;
+    height: 48px;
+    width: 200px;
+    padding: 0;
+}
+
+
+
+/* =============================================== */
+
+@media only screen and (max-width: 767px) {
+    .btn_margin{
+        float: none;
+        display: block;
+    }
+    .withdraw_page .send_request{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .withdraw_page .withdrawl_btn{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 320px) {
+
+}
+@media (min-width: 768px) and (max-width:1022px) {
+    .btn_margin{
+        margin-top: 10%;
+    }
+}
+@media (min-width: 1022px) and (max-width:1024px) {
+    .btn_margin{
+        margin-top: 10%;
+    }
+}

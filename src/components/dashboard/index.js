@@ -18,7 +18,7 @@ const Dashboard = () => {
   return (
     <>
       <TopNav userName={userName} />
-      <div className="dashboard_content" id="wrapper">
+      <div className="dashboard_content dashboard_page" id="wrapper">
         <SideNav />
         <div className="dashboardmain_content page-content-wrapper">
           <h1 className="contentheading">Dashboard</h1>
@@ -27,7 +27,7 @@ const Dashboard = () => {
               <img alt="profile.png" src={ProfileImage} className="welcomeimg" />
               <div className="username">
                 <h2>Welcome {userName},</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p className="profile-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
               </div>
             </div>
             <div className="balance_div">
@@ -67,22 +67,34 @@ const Dashboard = () => {
                 </thead>
                 <tbody>
                   <tr>
-                    <td><img alt="dashboardimg.png" src={DashboardImage} />Recieved from Adam Sandler</td>
+                    <td>
+                        <div className="dashboard_tdimg"><img alt="dashboardimg.png" src={DashboardImage} /></div>
+                        <div className="dashboard_table_text"> Recieved from Adam Sandler</div>
+                    </td>
                     <td>N20495902020400550</td>
                     <td className="dolarnumber">$322.560</td>
                   </tr>
                   <tr>
-                    <td><img alt="dashboardimg.png" src={DashboardImage} />Recieved from Adam Sandler</td>
+                    <td>
+                      <div className="dashboard_tdimg"><img alt="dashboardimg.png" src={DashboardImage} /></div>
+                      <div className="dashboard_table_text"> Recieved from Adam Sandler</div>
+                    </td>
                     <td>N20495902020400550</td>
                     <td className="dolarnumber">$322.560</td>
                   </tr>
                   <tr>
-                    <td><img alt="dashboardimg.png" src={DashboardImage} />Recieved from Adam Sandler</td>
+                    <td>
+                      <div className="dashboard_tdimg"><img alt="dashboardimg.png" src={DashboardImage} /></div>
+                      <div className="dashboard_table_text"> Recieved from Adam Sandler</div>
+                    </td>
                     <td>N20495902020400550</td>
                     <td className="dolarnumber">$322.560</td>
                   </tr>
                   <tr>
-                    <td><img alt="dashboardimg.png" src={DashboardImage} />Recieved from Adam Sandler</td>
+                    <td>
+                      <div className="dashboard_tdimg"><img alt="dashboardimg.png" src={DashboardImage} /></div>
+                      <div className="dashboard_table_text"> Recieved from Adam Sandler</div>
+                    </td>
                     <td>N20495902020400550</td>
                     <td className="dolarnumber">$322.560</td>
                   </tr>

@@ -37,7 +37,11 @@ const TopNav = (props) => {
           <div className="navbar-header">
             <Link className="navbar-brand" to="/dashboard"><img alt="Logo.png" src={LogoImage} className="header_logo" /></Link>
             <i className="fa fa-bars toggle-icon"></i>
+            {/* <button class="navbar-toggler" aria-controls="sidebar-wrapper" type="button" data-toggle="collapse" data-target="#sidebar-wrapper" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button> */}
           </div>
+          
           <ul className="nav navbar-nav navbar-right list-inline top_headerinline">
             <li className="list-inline-item"><Link to="#" className="notification"><i className="fa fa-bell bellicon"></i></Link></li>
             <li className="list-inline-item"><Link to="#" className="rebecca_text">{props?.userName}</Link></li>

@@ -6,7 +6,7 @@ import { Link, useHistory } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import LogoImage from '../../assets/images/Logo.png';
 import signupLatest from '../../assets/images/Signup_Latest.png';
-
+import './login.css';
 const Login = () => {
   const { setAuthTokens } = useAuth();
   const { register, handleSubmit, errors } = useForm({

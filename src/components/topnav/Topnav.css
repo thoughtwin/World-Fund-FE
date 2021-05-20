@@ -33,6 +33,31 @@
     .dasboard_navbar .navbar-header{
         display: inline-flex;
     }
+    /* .sidebar_newcollapse .navbar-collapse{
+        overflow: hidden;
+        top: 60px;
+        position: fixed;
+        height: calc(100vh - 30px)!important;
+        background: #01143E;
+        left: -100vw!important;
+        width: 100%!important;
+        transition: ease all .5s;
+        padding: 0px;
+        margin: 0px;
+        display: block!important;
+        visibility: hidden;
+      }
+      .sidebar_newcollapse .navbar-collapse.in{
+        left: 0vw!important;
+        transition: ease all .5s;
+        visibility: visible;
+        z-index: 99;
+        width: 220px !important;
+        overflow: hidden;
+      }
+      #sidebar-wrapper{
+          margin-left: 0!important;
+      } */
 }
 
  

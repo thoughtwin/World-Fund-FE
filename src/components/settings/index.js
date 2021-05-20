@@ -17,7 +17,7 @@ const Settings = () => {
   return (
     <>
       <TopNav userName={userName} />
-      <div className="dashboard_content" id="wrapper">
+      <div className="dashboard_content setting_page" id="wrapper">
         <SideNav />
         <div className="dashboardmain_content page-content-wrapper">
           <div className="deposit_container">

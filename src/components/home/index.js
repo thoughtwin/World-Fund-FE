@@ -40,7 +40,7 @@ class Home extends React.Component {
             <HomeNav/>
             <div className="banner_Container">
               <h1>The most secure <br />source of investment</h1>
-              <p>We are a financial invstment company where you <br />can be the part of its investment community worldwide.
+              <p>We are a financial investment company where you <br />can be the part of its investment community worldwide.
           </p>
               <ul>
                 <li><button className="invest_nowbtn">Invest Now</button></li>
@@ -108,7 +108,7 @@ class Home extends React.Component {
               <div className="col-md-3 text-center total_account_div">
                 <img src={Icon_1} />
                 <h4>7344</h4>
-                <p>Total acoounts</p>
+                <p>Total accounts</p>
               </div>
               <div className="col-md-3 text-center total_account_div">
                 <img src={Icons_2} />

@@ -17,6 +17,28 @@
 .deposit_container h1{
     display: inline-block;
 }
+.deposite_page td{
+    height: 60px;
+    line-height: 60px;
+    border-top: 1px solid #70798C;
+    padding: 0 10px;
+}
+.deposite_page th{
+    border: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* ===================================================== */
@@ -24,6 +46,12 @@
     .diposite_addmoney{
         padding: 10px 45px;
         margin-top: 15% !important;
+    }
+    
+}
+@media (min-width: 768px) and (max-width:1022px) {
+    .deposit_container .add_money {
+        margin-top: 10%;
     }
 }
 @media (min-width: 1022px) and (max-width:1024px) {

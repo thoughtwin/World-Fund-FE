@@ -2,7 +2,7 @@ import React from 'react';
 import SideNav from '../sidenav';
 import TopNav from '../topnav';
 import emailArrow from '../../../src/assets/images/emailarrow.png';
-
+import './history.css';
 class History extends React.Component {
   constructor(props) {
     super(props);
@@ -12,12 +12,12 @@ class History extends React.Component {
     return (
       <>
         <TopNav />
-        <div className="dashboard_content" id="wrapper">
+        <div className="dashboard_content history_page" id="wrapper">
           <SideNav />
           <div className="dashboardmain_content page-content-wrapper">
             <div className="deposit_container">
               <h1 className="contentheading">History</h1>
-              <div className="balance_div">
+              <div className="balance_div history_balance">
                 <div className="dropdown">
                   <button className="dropdown-toggle" type="button" data-toggle="dropdown">All
                   <span className="caret"></span></button>
@@ -31,7 +31,7 @@ class History extends React.Component {
             </div>
 
 
-            <div className="dashboard_table deposit_table">
+            <div className="dashboard_table deposit_table table-responsive border-0">
               <div className="table">
                 <table className="table table-striped">
                   <tr className="table_heading">

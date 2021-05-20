@@ -12,7 +12,7 @@ class Deposit extends React.Component {
     return (
       <div>
         <TopNav />
-        <div className="dashboard_content" id="wrapper">
+        <div className="dashboard_content deposite_page" id="wrapper">
           <SideNav />
           <div className="dashboardmain_content page-content-wrapper">
             <div className="deposit_container">

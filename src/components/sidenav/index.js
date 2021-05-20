@@ -14,15 +14,18 @@ class SideNav extends React.Component {
   }
   render() {
     return (
-      <div className="siderbar_container" id="sidebar-wrapper">
+      <div className="sidebar_newcollapse">
+        {/* <div className="collapse navbar-collapse siderbar_container" id="sidebar-wrapper"> */}
+        <div className=" siderbar_container" id="sidebar-wrapper">
         <ul className="sidebar-nav">
-          <li><img alt="dashboard.png" src={DashboardImg} /><Link to="/dashboard" style={{textDecoration: 'none'}}><span style={{color:"white"}}>Dashboard</span></Link></li>
-          <li><img alt="Affiliate.png" src={AffiliateImg} /><Link to="/affiliate" style={{textDecoration: 'none'}}><span style={{color:"white"}}>Affiliate</span></Link></li>
-          <li><img alt="deposit.png" src={DepositImg} /><Link to="/deposit" style={{textDecoration: 'none'}}><span style={{color:"white"}}>Deposit</span></Link></li>
-          <li><img alt="Withdraw.png" src={WithdrawImg} /><Link to="/withdraw" style={{textDecoration: 'none'}} ><span style={{color:"white"}}>Withdraw</span></Link></li>
-          <li><img alt="history.png" src={HistoryImg} /><Link to="/history" style={{textDecoration: 'none'}}><span style={{color:"white"}}>History</span></Link></li>
-          <li><img alt="settings.png" src={SettingImg} /><Link to="/settings" style={{textDecoration: 'none'}}><span style={{color:"white"}}>Settings</span></Link></li>
+          <li><img alt="dashboard.png" src={DashboardImg} /><Link to="/dashboard" style={{textDecoration: 'none'}}><span className="list_text" style={{color:"white"}}>Dashboard</span></Link></li>
+          <li><img alt="Affiliate.png" src={AffiliateImg} /><Link to="/affiliate" style={{textDecoration: 'none'}}><span className="list_text" style={{color:"white"}}>Affiliate</span></Link></li>
+          <li><img alt="deposit.png" src={DepositImg} /><Link to="/deposit" style={{textDecoration: 'none'}}><span className="list_text" style={{color:"white"}}>Deposit</span></Link></li>
+          <li><img alt="Withdraw.png" src={WithdrawImg} /><Link to="/withdraw" style={{textDecoration: 'none'}} ><span className="list_text" style={{color:"white"}}>Withdraw</span></Link></li>
+          <li><img alt="history.png" src={HistoryImg} /><Link to="/history" style={{textDecoration: 'none'}}><span className="list_text" style={{color:"white"}}>History</span></Link></li>
+          <li><img alt="settings.png" src={SettingImg} /><Link to="/settings" style={{textDecoration: 'none'}}><span className="list_text" style={{color:"white"}}>Settings</span></Link></li>
         </ul>
+      </div>
       </div>
     )
   }

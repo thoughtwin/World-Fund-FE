@@ -2,7 +2,7 @@ import React from 'react';
 import SideNav from '../sidenav';
 import TopNav from '../topnav';
 import emailArrow from '../../../src/assets/images/emailarrow.png';
-
+import './withdraw.css';
 class Withdraw extends React.Component {
   constructor(props) {
     super(props);
@@ -12,17 +12,17 @@ class Withdraw extends React.Component {
     return (
       <div>
         <TopNav />
-        <div className="dashboard_content" id="wrapper">
+        <div className="dashboard_content withdraw_page" id="wrapper">
           <SideNav />
           <div className="dashboardmain_content page-content-wrapper">
             <div className="deposit_container">
               <h1 className="contentheading">Withdraw</h1>
-              <div className="withdraw_btn">
+              <div className="withdraw_btn btn_margin">
                 <button className="add_money withdrawl_btn">Withdraw</button>
-                <button className="add_money">Send Request</button>
+                <button className="add_money send_request">Send Request</button>
               </div>
             </div>
-            <div className="dashboard_table deposit_table">
+            <div className="dashboard_table deposit_table table-responsive border-0">
               <div className="table">
                 <table className="table table-striped">
                   <tr className="table_heading">
