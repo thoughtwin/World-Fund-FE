@@ -33,7 +33,7 @@ const About = () => {
           <HomeNav />
           <div className="banner_Container">
             <h1>Who are we?</h1>
-            <p>We are a financial invstment company where you<br /> can be the part of its investment community worldwide.</p>
+            <p>We are a financial investment company where you<br /> can be the part of its investment community worldwide.</p>
           </div>
         </div>
       </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import SideNav from '../sidenav';
 import TopNav from '../topnav';
-
+import './affiliate.css';
 class Affiliate extends React.Component {
   constructor(props) {
     super(props);
@@ -11,9 +11,9 @@ class Affiliate extends React.Component {
     return (
       <>
         <TopNav />
-        <div className="dashboard_content">
+        <div className="dashboard_content affiliate_page" id="wrapper">
           <SideNav />
-          <div className="dashboardmain_content">
+          <div className="dashboardmain_content  page-content-wrapper">
               <h1 style={{ color: 'white' }}>Affiliate page</h1>
           </div>
         </div>
