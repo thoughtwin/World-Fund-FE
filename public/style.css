@@ -1432,6 +1432,12 @@ p.last_diposit{
     /* font-family: SF Pro Light!important; */
     padding: 21px 0 18px 0;
     text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+
 }
 .fqatabbing_container .panel-default>.panel-heading a:hover{
     text-decoration: none;
@@ -1618,6 +1624,7 @@ button:focus{
     }
     li.logintext{
         padding: 0px 0px 16px;
+        width: 100%;
     }
     .recent_transactions p.recent_text{
         margin-bottom: 70px;
