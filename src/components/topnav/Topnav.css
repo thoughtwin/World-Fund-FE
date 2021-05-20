@@ -16,6 +16,15 @@
 .header_dashboard .navbar-toggler{
     display: none;
 }
+.rebecca_text{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #FFFFFF !important;
+    text-transform: capitalize;
+}
 
 
 
@@ -28,6 +37,9 @@
     }
     .top_headerinline{
         float: right;
+    }
+    .rebecca_text{
+        padding: 13px 0px 0px 7px !important;
     }
     .dasboard_navbar .toggle-icon{
         padding: 0;
@@ -64,8 +76,16 @@
         display: block;
         margin: -12px;
     }
-    
-    
+    .rebecca_profilelist a{
+        background-color: transparent !important;
+    }
+    .header_dashboard .dropdown-menu{
+        position: absolute!important;
+        left: -53px;
+        box-shadow: 0px 0px 8px 0px rgba(114, 112, 113, 0.6) !important;
+        top: 65px;
+    }
+   
 }
 
  
