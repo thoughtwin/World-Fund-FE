@@ -1,0 +1,31 @@
+
+
+/* .faq_containerpage  .card-toggle:after {
+    font-family: 'FontAwesome' !important;  
+    content: "\f068" !important;
+    float: right !important; 
+}
+.faq_containerpage  .card-toggle .collapsed:after {
+    content: "\f067" !important; 
+} */
+
+  .panel-group .panel-heading a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    position: relative;
+  }
+  
+  .panel-group .panel-heading a:after {
+    content: '-';
+    float: right;
+    font-weight: normal;
+  }
+  
+  .panel-group .panel-heading a.collapsed:after {
+    content: '+';
+    font-weight: normal;
+  }
+  .panel-group{
+      margin-top: 50px;
+  }
