@@ -91,6 +91,9 @@ h3.contact_head{
     background-color: transparent;
     color: #fff;
     opacity: 1;
+    outline: 0;
+    border-color: #00F29D;
+    box-shadow: none;
 }
 .text_area textarea{
     background-color: transparent;
@@ -102,7 +105,7 @@ h3.contact_head{
     font-size: 14px;
     line-height: 17px;
     color: #FFFFFF;
-    opacity: 0.5;
+    opacity: 1;
     padding: 14px 10px;
 }
 .text_area label{
