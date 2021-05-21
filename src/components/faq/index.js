@@ -523,14 +523,14 @@ const Faq = () => {
             <p className="faq_contenttext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed volutpat vulputate ut fermentum tristique fermentum posuere.</p>
             <div class="panel-group" id="accordionGroupOpen" role="tablist" aria-multiselectable="true">
             <div class="panel panel-default">
-              <div class="panel-heading" role="tab" id="headingOne">
+              <div class="panel-heading" role="tab" id="heading1">
                 <h4 class="panel-title">
                   <a role="button" data-toggle="collapse" data-parent="#accordionGroupOpen" href="#collapseOpen11" aria-expanded="true" aria-controls="collapseOpenOne">
                   What investment income does the VIA platform provide?
                   </a>
                 </h4>
               </div>
-              <div id="collapseOpen11" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+              <div id="collapseOpen11" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading1">
                 <div class="panel-body">
                 You can sell your VTU units according to weekly limits using the internal VTU exchange.
                  You can withdraw the profit from the sold units at any time in any currency convenient for
@@ -540,14 +540,14 @@ const Faq = () => {
               </div>
             </div>
             <div class="panel panel-default">
-              <div class="panel-heading" role="tab" id="headingTwo">
+              <div class="panel-heading" role="tab" id="heading2">
                 <h4 class="panel-title">
                   <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionGroupOpen" href="#collapseOpen12" aria-expanded="false" aria-controls="collapseTwo">
                   What is the minimum investment amount I can use to get started?
                   </a>
                 </h4>
               </div>
-              <div id="collapseOpen12" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+              <div id="collapseOpen12" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
                 <div class="panel-body">
                   You can sell your VTU units according to weekly limits using the internal VTU exchange.
                   You can withdraw the profit from the sold units at any time in any currency convenient for
@@ -557,14 +557,14 @@ const Faq = () => {
               </div>
             </div>
             <div class="panel panel-default">
-              <div class="panel-heading" role="tab" id="headingThree">
+              <div class="panel-heading" role="tab" id="heading3">
                 <h4 class="panel-title">
                   <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionGroupOpen" href="#collapseOpen13" aria-expanded="false" aria-controls="collapseThree">
                   Why is the platform's profitability lower on weekends than on workdays?
                   </a>
                 </h4>
               </div>
-              <div id="collapseOpen13" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+              <div id="collapseOpen13" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading3">
                 <div class="panel-body">
                   You can sell your VTU units according to weekly limits using the internal VTU exchange.
                   You can withdraw the profit from the sold units at any time in any currency convenient for
@@ -574,14 +574,14 @@ const Faq = () => {
               </div>
             </div>
             <div class="panel panel-default">
-              <div class="panel-heading" role="tab" id="headingThree">
+              <div class="panel-heading" role="tab" id="heading4">
                 <h4 class="panel-title">
                   <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionGroupOpen" href="#collapseOpen14" aria-expanded="false" aria-controls="collapseThree">
                   What are VTU units?
                   </a>
                 </h4>
               </div>
-              <div id="collapseOpen14" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+              <div id="collapseOpen14" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading4">
                 <div class="panel-body">
                   You can sell your VTU units according to weekly limits using the internal VTU exchange.
                   You can withdraw the profit from the sold units at any time in any currency convenient for
@@ -591,14 +591,14 @@ const Faq = () => {
               </div>
             </div>
             <div class="panel panel-default">
-              <div class="panel-heading" role="tab" id="headingThree">
+              <div class="panel-heading" role="tab" id="heading5">
                 <h4 class="panel-title">
                   <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionGroupOpen" href="#collapseOpen15" aria-expanded="false" aria-controls="collapseThree">
                   What investment income does the VIA platform provide?
                   </a>
                 </h4>
               </div>
-              <div id="collapseOpen15" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+              <div id="collapseOpen15" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading5">
                 <div class="panel-body">
                   You can sell your VTU units according to weekly limits using the internal VTU exchange.
                   You can withdraw the profit from the sold units at any time in any currency convenient for
@@ -608,14 +608,14 @@ const Faq = () => {
               </div>
             </div>
             <div class="panel panel-default">
-              <div class="panel-heading" role="tab" id="headingThree">
+              <div class="panel-heading" role="tab" id="heading6">
                 <h4 class="panel-title">
                   <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionGroupOpen" href="#collapseOpen16" aria-expanded="false" aria-controls="collapseThree">
                   What is the minimum investment amount I can use to get started?
                   </a>
                 </h4>
               </div>
-              <div id="collapseOpen16" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+              <div id="collapseOpen16" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading6">
                 <div class="panel-body">
                   You can sell your VTU units according to weekly limits using the internal VTU exchange.
                   You can withdraw the profit from the sold units at any time in any currency convenient for
@@ -625,14 +625,14 @@ const Faq = () => {
               </div>
             </div>
             <div class="panel panel-default">
-              <div class="panel-heading" role="tab" id="headingThree">
+              <div class="panel-heading" role="tab" id="heading7">
                 <h4 class="panel-title">
                   <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionGroupOpen" href="#collapseOpen17" aria-expanded="false" aria-controls="collapseThree">
                   What are VTU units?
                   </a>
                 </h4>
               </div>
-              <div id="collapseOpen17" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+              <div id="collapseOpen17" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading8">
                 <div class="panel-body">
                   You can sell your VTU units according to weekly limits using the internal VTU exchange.
                   You can withdraw the profit from the sold units at any time in any currency convenient for
@@ -642,14 +642,14 @@ const Faq = () => {
               </div>
             </div>
             <div class="panel panel-default">
-              <div class="panel-heading" role="tab" id="headingThree">
+              <div class="panel-heading" role="tab" id="heading9">
                 <h4 class="panel-title">
                   <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordionGroupOpen" href="#collapseOpen18" aria-expanded="false" aria-controls="collapseThree">
                   What investment income does the VIA platform provide?
                   </a>
                 </h4>
               </div>
-              <div id="collapseOpen18" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+              <div id="collapseOpen18" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading9">
                 <div class="panel-body">
                   You can sell your VTU units according to weekly limits using the internal VTU exchange.
                   You can withdraw the profit from the sold units at any time in any currency convenient for
