@@ -4,9 +4,15 @@
     text-transform: uppercase;
     color: #8798AD;
 }
-
-
-
+.setting_page .tabbing_form input{
+    color: #A3B0CC;
+}
+.setting_page .tabbing_form input::placeholder{
+    color: #A3B0CC;
+}
+.setting_page .tabbing_form input:focus{
+   background-color: transparent;
+}
 
 
 

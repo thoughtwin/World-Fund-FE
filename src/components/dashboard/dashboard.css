@@ -68,7 +68,9 @@
 .dashboard_table_text{
   margin-top: 20px;
 }
-
+.username h2{
+  text-transform: capitalize;
+}
 
 
 
