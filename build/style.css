@@ -1643,15 +1643,18 @@ button:focus{
         padding-right: 40px;
     }
     .login_content input{
-        width: 287px;
+        width: 100%;
     }
     .checkbox input{
         width: auto;
     }
     .loginleft_content{
         margin: 0;
-        padding: 0 0px 18px 35px;
+        padding: 15px 25px;
         overflow: hidden;
+    }
+    .loginleft_content form{
+        width: 100%;
     }
     .create_accountbtn{
         width: 80%;
@@ -1668,7 +1671,7 @@ button:focus{
         margin: 0 auto;
     }
     .banner_Container h1{
-        margin-top:66px;
+        margin-top:100px;
         font-size: 30px;
         line-height: 34px;
     }
@@ -1847,6 +1850,7 @@ button:focus{
     }
     .home_maincontainer .container{
         margin:0;
+        max-width: 100%;
     }
     .why_choose p{
         margin-bottom: 0;
@@ -1909,9 +1913,6 @@ button:focus{
     }
     .recent_transactions h2{
         font-size: 21px;
-    }
-    .loginleft_content{
-        padding: 0 0px 18px 15px;
     }
     .banner_Container h1{
         font-size: 25px;
@@ -2099,6 +2100,9 @@ button:focus{
   @media (min-width: 1022px) and (max-width:1024px) {
     .graph_container img{
         width: 825px;
+    }
+    .loginleft_content{
+        margin-left: 80px;
     }
     .create_accountdiv{
         width: 100%;
