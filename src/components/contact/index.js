@@ -8,18 +8,57 @@ import Footer_wave from '../../assets/images/Footer_wave.png';
 import './contact.css';
 const Contact = () => {
     return(
-        <div className="home_maincontainer rules_page">
+        <div className="home_maincontainer contact_us_page">
         <div className="ourpolicies_container">
         <div className="container">
             <HomeNav />
         </div>
         </div>
 
-        <div className="privacy_policycontainer rule_container" style={{backgroundImage:`url(${Base})`}}>
-        <div className="container">
-            <span>Home  /  FAQ</span>
-            <h2>Contact</h2>
-        </div>
+        <div className=" contactUs_container">
+          <div className="container">
+              <span className="breacrumbs_text">Home  /  Contact US</span>
+            <div className="row">
+              <div className="col-md-12">
+                <h3 className="contact_head">We are a financial investment company where you can be the part of 
+                  its investment community worldwide. </h3>
+              </div>
+              <div className="col-md-12">
+                <div className="contact_detailwidth">
+                  <p className="contact_position">
+                    contact us
+                  </p>
+                  <div className="contact_detail">
+                    <h4>Tell us about yourself</h4>
+                    <p className="privacy_text">By filling in the form, you agree to our Privacy Policy, including our cookie use.</p>
+                    <p className="free_text">Schedule a free consultation at hello@worldfunds.com, or fill out the form and we will follow up with you shortly.</p>
+                    <form>
+                      <div class="field">
+                        <input type="text" required autocomplete="off" id="password"/>
+                        <label for="password" title="Email" data-title="Email"></label>
+                      </div>
+                      <div class="field fname_feild">
+                        <input type="text" required autocomplete="off" id="fname"/>
+                        <label for="fname" title="First name" data-title="First name"></label>
+                      </div>
+                      <div class="field lname_feild">
+                        <input type="text" required autocomplete="off" id="lname"/>
+                        <label for="lname" title="Last name" data-title="Last name"></label>
+                      </div>
+                      <div className="text_area">
+                        <label>Enter details</label>
+                        <textarea className="form-control" rows="5"> Short description</textarea>
+                      </div>
+                      <div class="checkbox ">
+                        <label><input type="checkbox" name="remember"/> Keep me up-to-date with latest news of investments</label>
+                      </div>
+                      <button type="submit" class="invest_nowus">invest now</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
  
