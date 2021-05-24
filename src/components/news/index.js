@@ -15,7 +15,12 @@ import Recent3 from '../../assets/images/Recent3.png';
 import Recent4 from '../../assets/images/Recent4.png';
 // import Reactslider from '../reactslider/Reactslider'
 import './news.css';
+import { useHistory } from 'react-router';
 const News = () => {
+  let history = useHistory();
+  const HandleReadMore = () =>{
+    return history.push('/newsDespriction')
+  }
     return (
         <div className="home_maincontainer news_page">
             <div className="ourpolicies_container">
@@ -44,7 +49,7 @@ const News = () => {
                       tristique turpis. Turpis tortor tristique maecenas duis habitant. Pellentesque 
                       ipsum vulputate purus vestibulum quis. Eu proin sit congue iaculis dignissim augue.</p>
                     <div className="read_morebtn">
-                    <button type="submit" class="Read_More"> Read More</button>
+                    <button type="submit" class="Read_More"  > Read More</button>
                     </div>
                   </div>
                 </div>
@@ -106,7 +111,7 @@ const News = () => {
                     lectus euismod accumsan.Integer porta non, bibendum et et, sed. Et amet id leo sed sapien.....</p>
                 </div>
                 <div className="read_morebtnnew">
-                  <button type="submit" class="Read_Morenew"> Read More</button>
+                  <button type="submit" class="Read_Morenew" onClick={() => HandleReadMore()}> Read More</button>
                 </div>
               </div>
             </div>

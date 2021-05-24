@@ -10,6 +10,7 @@ import Contact from './components/contact';
 import Rules from './components/rules';
 import Faq from './components/faq';
 import News from './components/news';
+import NewsDescription from './components/newsdescription';
 import NotFound from './components/notFound';
 import { AuthContext } from './components/context/auth';
 import PrivateRoute from './components/route/PrivateRoute';
@@ -53,6 +54,7 @@ const App = (props) => {
             <Route exact path='/about' component={About} />
             <Route exact path='/contact' component={Contact} />
             <Route exact path='/news' component={News} />
+            <Route exact path='/newsDespriction' component={NewsDescription} />
             <Route exact path='/rules' component={Rules} />
             <Route exact path='/faq' component={Faq} />
             <Route path='/verify' component={Verify} />
