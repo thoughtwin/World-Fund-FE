@@ -1713,7 +1713,10 @@ button:focus{
         line-height: 30px;
     }
     .investing_div button{
-        font-size: 15px;
+        padding: 16px 0;
+        font-size: 16px;
+        height: 54px;
+        width: 151px;
     }
     .Get_started_today p{
         margin-bottom: 12px;
