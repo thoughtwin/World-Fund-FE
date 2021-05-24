@@ -92,7 +92,7 @@ const News = () => {
                <h2 className="recent_article">Recent Articles</h2>
             </div>
           </div>
-          <a href="">
+          
             <div className="row mt-5">
               <div className="col-xl-6 col-lg-6 col-md-4">
                 <div className="border-radius">
@@ -115,8 +115,8 @@ const News = () => {
                 </div>
               </div>
             </div>
-          </a>
-          <a href="">
+          
+         
             <div className="row mt-5">
               <div className="col-xl-6 col-lg-6 col-md-4">
                 <div className="border-radius">
@@ -139,8 +139,7 @@ const News = () => {
                 </div>
               </div>
             </div>
-          </a>
-          <a href="">
+     
             <div className="row mt-5">
               <div className="col-xl-6 col-lg-6 col-md-4">
                 <div className="border-radius">
@@ -163,8 +162,7 @@ const News = () => {
                 </div>
               </div>
             </div>
-          </a>
-          <a href="">
+          
             <div className="row mt-5">
               <div className="col-xl-6 col-lg-6 col-md-4">
                 <div className="border-radius">
@@ -187,7 +185,7 @@ const News = () => {
                 </div>
               </div>
             </div>
-          </a>
+          
           <div className="row text-center">
             <div className="more_newsbtndiv col-md-12">
                 <button type="submit" class="more_newsbtn">More News</button>
