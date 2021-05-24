@@ -49,7 +49,7 @@ const News = () => {
                 </div>
                 <div className="col-xl-3 col-lg-3 col-md-12">
                   <div className="right_sideimg">
-                    <img src={First}></img>
+                    <img src={First} alt=""></img>
                   </div>
                 </div>
               </div>
@@ -69,7 +69,7 @@ const News = () => {
                           <div class="form-group has-search1 ">
                             <input type="text" class="form-control" placeholder="Enter your email"/>
                               <div class="arrow_container1">
-                                <img src={Arrow} class="arrow_img1"/>
+                                <img src={Arrow} class="arrow_img1" alt=""/>
                                 </div>
                             </div>
                           </div>
@@ -86,92 +86,105 @@ const News = () => {
                <h2 className="recent_article">Recent Articles</h2>
             </div>
           </div>
-          <div className="row mt-5">
-            <div className="col-xl-6 col-lg-6 col-md-4">
-              <div className="border-radius">
-                  <img src={Recent1} class=""/>
+          <a href="">
+            <div className="row mt-5">
+              <div className="col-xl-6 col-lg-6 col-md-4">
+                <div className="border-radius">
+                    <img src={Recent1} class="" alt=""/>
+                </div>
+              </div>
+              <div className="col-xl-6 col-lg-6 col-md-8">
+                <div className="recent_detail">
+                  <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Erat pellentesque </h4>
+                  <p className="date_head">
+                    <img src={Date_calander} class="Date_calander" alt=""/>
+                    April 24, 2021</p>
+                  <p className="loream_head">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In condimentum vitae consectetur 
+                    risus sollicitudin. Tortor, cras vestibulum nunc neque aliquet. Quis urna nascetur vel amet.
+                    Sit vitae, nunc, ante in cursus at. Proin justo pellentesque condimentum tristique vulputate facilisi 
+                    lectus euismod accumsan.Integer porta non, bibendum et et, sed. Et amet id leo sed sapien.....</p>
+                </div>
+                <div className="read_morebtnnew">
+                  <button type="submit" class="Read_Morenew"> Read More</button>
+                </div>
               </div>
             </div>
-            <div className="col-xl-6 col-lg-6 col-md-8">
-              <div className="recent_detail">
-                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Erat pellentesque </h4>
-                <p className="date_head">
-                  <img src={Date_calander} class="Date_calander"/>
-                  April 24, 2021</p>
-                <p className="loream_head">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In condimentum vitae consectetur 
-                  risus sollicitudin. Tortor, cras vestibulum nunc neque aliquet. Quis urna nascetur vel amet.
-                   Sit vitae, nunc, ante in cursus at. Proin justo pellentesque condimentum tristique vulputate facilisi 
-                   lectus euismod accumsan.Integer porta non, bibendum et et, sed. Et amet id leo sed sapien.....</p>
+          </a>
+          <a href="">
+            <div className="row mt-5">
+              <div className="col-xl-6 col-lg-6 col-md-4">
+                <div className="border-radius">
+                    <img src={Recent2} class="" alt=""/>
+                </div>
               </div>
-              <div className="read_morebtnnew">
-                <button type="submit" class="Read_Morenew"> Read More</button>
-              </div>
-            </div>
-          </div>
-          <div className="row mt-5">
-            <div className="col-xl-6 col-lg-6 col-md-4">
-              <div className="border-radius">
-                  <img src={Recent2} class=""/>
-              </div>
-            </div>
-            <div className="col-xl-6 col-lg-6 col-md-8">
-              <div className="recent_detail">
-                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Erat pellentesque </h4>
-                <p className="date_head">
-                  <img src={Date_calander} class="Date_calander"/>
-                  April 24, 2021</p>
-                <p className="loream_head">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In condimentum vitae consectetur 
-                  risus sollicitudin. Tortor, cras vestibulum nunc neque aliquet. Quis urna nascetur vel amet.
-                   Sit vitae, nunc, ante in cursus at. Proin justo pellentesque condimentum tristique vulputate facilisi 
-                   lectus euismod accumsan.Integer porta non, bibendum et et, sed. Et amet id leo sed sapien.....</p>
-              </div>
-              <div className="read_morebtnnew">
-                <button type="submit" class="Read_Morenew"> Read More</button>
+              <div className="col-xl-6 col-lg-6 col-md-8">
+                <div className="recent_detail">
+                  <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Erat pellentesque </h4>
+                  <p className="date_head">
+                    <img src={Date_calander} class="Date_calander" alt=""/>
+                    April 24, 2021</p>
+                  <p className="loream_head">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In condimentum vitae consectetur 
+                    risus sollicitudin. Tortor, cras vestibulum nunc neque aliquet. Quis urna nascetur vel amet.
+                    Sit vitae, nunc, ante in cursus at. Proin justo pellentesque condimentum tristique vulputate facilisi 
+                    lectus euismod accumsan.Integer porta non, bibendum et et, sed. Et amet id leo sed sapien.....</p>
+                </div>
+                <div className="read_morebtnnew">
+                  <button type="submit" class="Read_Morenew"> Read More</button>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="row mt-5">
-            <div className="col-xl-6 col-lg-6 col-md-4">
-              <div className="border-radius">
-                  <img src={Recent3} class=""/>
+          </a>
+          <a href="">
+            <div className="row mt-5">
+              <div className="col-xl-6 col-lg-6 col-md-4">
+                <div className="border-radius">
+                    <img src={Recent3} class="" alt=""/>
+                </div>
+              </div>
+              <div className="col-xl-6 col-lg-6 col-md-8">
+                <div className="recent_detail">
+                  <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Erat pellentesque </h4>
+                  <p className="date_head">
+                    <img src={Date_calander} class="Date_calander" alt=""/>
+                    April 24, 2021</p>
+                  <p className="loream_head">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In condimentum vitae consectetur 
+                    risus sollicitudin. Tortor, cras vestibulum nunc neque aliquet. Quis urna nascetur vel amet.
+                    Sit vitae, nunc, ante in cursus at. Proin justo pellentesque condimentum tristique vulputate facilisi 
+                    lectus euismod accumsan.Integer porta non, bibendum et et, sed. Et amet id leo sed sapien.....</p>
+                </div>
+                <div className="read_morebtnnew">
+                  <button type="submit" class="Read_Morenew"> Read More</button>
+                </div>
               </div>
             </div>
-            <div className="col-xl-6 col-lg-6 col-md-8">
-              <div className="recent_detail">
-                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Erat pellentesque </h4>
-                <p className="date_head">
-                  <img src={Date_calander} class="Date_calander"/>
-                  April 24, 2021</p>
-                <p className="loream_head">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In condimentum vitae consectetur 
-                  risus sollicitudin. Tortor, cras vestibulum nunc neque aliquet. Quis urna nascetur vel amet.
-                   Sit vitae, nunc, ante in cursus at. Proin justo pellentesque condimentum tristique vulputate facilisi 
-                   lectus euismod accumsan.Integer porta non, bibendum et et, sed. Et amet id leo sed sapien.....</p>
+          </a>
+          <a href="">
+            <div className="row mt-5">
+              <div className="col-xl-6 col-lg-6 col-md-4">
+                <div className="border-radius">
+                    <img src={Recent4} class="" alt=""/>
+                </div>
               </div>
-              <div className="read_morebtnnew">
-                <button type="submit" class="Read_Morenew"> Read More</button>
+              <div className="col-xl-6 col-lg-6 col-md-8">
+                <div className="recent_detail">
+                  <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Erat pellentesque </h4>
+                  <p className="date_head">
+                    <img src={Date_calander} class="Date_calander" alt=""/>
+                    April 24, 2021</p>
+                  <p className="loream_head">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In condimentum vitae consectetur 
+                    risus sollicitudin. Tortor, cras vestibulum nunc neque aliquet. Quis urna nascetur vel amet.
+                    Sit vitae, nunc, ante in cursus at. Proin justo pellentesque condimentum tristique vulputate facilisi 
+                    lectus euismod accumsan.Integer porta non, bibendum et et, sed. Et amet id leo sed sapien.....</p>
+                </div>
+                <div className="read_morebtnnew">
+                  <button type="submit" class="Read_Morenew"> Read More</button>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="row mt-5">
-            <div className="col-xl-6 col-lg-6 col-md-4">
-              <div className="border-radius">
-                  <img src={Recent4} class=""/>
-              </div>
-            </div>
-            <div className="col-xl-6 col-lg-6 col-md-8">
-              <div className="recent_detail">
-                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Erat pellentesque </h4>
-                <p className="date_head">
-                  <img src={Date_calander} class="Date_calander"/>
-                  April 24, 2021</p>
-                <p className="loream_head">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In condimentum vitae consectetur 
-                  risus sollicitudin. Tortor, cras vestibulum nunc neque aliquet. Quis urna nascetur vel amet.
-                   Sit vitae, nunc, ante in cursus at. Proin justo pellentesque condimentum tristique vulputate facilisi 
-                   lectus euismod accumsan.Integer porta non, bibendum et et, sed. Et amet id leo sed sapien.....</p>
-              </div>
-              <div className="read_morebtnnew">
-                <button type="submit" class="Read_Morenew"> Read More</button>
-              </div>
+          </a>
+          <div className="row text-center">
+            <div className="more_newsbtndiv col-md-12">
+                <button type="submit" class="more_newsbtn">More News</button>
             </div>
           </div>
         </div>
@@ -191,7 +204,7 @@ const News = () => {
         <div className="footer_container" style={{backgroundImage:`url(${Footer_wave})`}}>
           <div className="row container container_row footer">
             <div className="col-md-3 margin_bottom">
-              <img src={Logo} />
+              <img src={Logo} alt=""/>
             </div>
             <div className="col-md-2 margin_bottom">
               <ul>
@@ -229,7 +242,7 @@ const News = () => {
           </div>
           <div className="chat_btns">
             <p className="chat_withus">Chat with us<img src={chat_small} /></p>
-            <p><img src={Chat_big} /></p>
+            <p><img src={Chat_big} alt=""/></p>
           </div>
         </div>
       </div>
