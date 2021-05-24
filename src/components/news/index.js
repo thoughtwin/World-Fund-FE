@@ -1,5 +1,6 @@
 import React from 'react';
 import HomeNav from '../homenav';
+import Newsdescription from '../newsdescription';
 import chat_small from '../../assets/images/chat_small.png';
 import Chat_big from '../../assets/images/Chat_big.png';
 import Logo from '../../assets/images/Logo.png';
