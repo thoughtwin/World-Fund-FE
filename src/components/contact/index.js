@@ -5,6 +5,7 @@ import Chat_big from '../../assets/images/Chat_big.png';
 import Logo from '../../assets/images/Logo.png';
 import Base from '../../assets/images/Base.png';
 import Footer_wave from '../../assets/images/Footer_wave.png';
+import Contact_bg from '../../assets/images/Contact_bg.png';
 import './contact.css';
 const Contact = () => {
     return(
@@ -14,20 +15,28 @@ const Contact = () => {
             <HomeNav />
         </div>
         </div>
-
+        <div className="privacy_policycontainer contact_container" style={{backgroundImage:`url(${Base})`}}>
+              <div className="container">
+                  <h2>Contact Us</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Habitasse orci.</p>
+              </div>
+            </div>
         <div className=" contactUs_container">
           <div className="container">
-              <span className="breacrumbs_text">Home  /  Contact US</span>
+              {/* <span className="breacrumbs_text">Home  /  Contact US</span> */}
             <div className="row">
-              <div className="col-md-12">
-                <h3 className="contact_head">We are a financial investment company where you can be the part of 
-                  its investment community worldwide. </h3>
+              <div className="col-md-6">
+                <h3 className="contact_head">We are a financial investment company </h3>
+                <h2 className="contact_headtwo">Where you can be the part of its investment community <span className="green-color">worldwide</span></h2>
+                <div className="conatct_bg">
+                    <img src={Contact_bg} alt=""></img>
+                  </div>
               </div>
-              <div className="col-md-12">
+              <div className="col-md-6">
                 <div className="contact_detailwidth">
-                  <p className="contact_position">
+                  {/* <p className="contact_position">
                     contact us
-                  </p>
+                  </p> */}
                   <div className="contact_detail">
                     <h4>Tell us about yourself</h4>
                     <p className="privacy_text">By filling in the form, you agree to our Privacy Policy, including our cookie use.</p>

@@ -209,8 +209,14 @@ img.Date_calander{
 a:hover{
     text-decoration: none;
 }
-
-
+.swal-button-container .swal-button.swal-button--confirm{
+    background-color: #00F29D;
+    color: #000;
+    font-weight: normal;
+}
+.swal-button-container .swal-button.swal-button--confirm:focus{
+    box-shadow: none;
+}
 
 
 

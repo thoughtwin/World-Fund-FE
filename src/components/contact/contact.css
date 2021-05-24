@@ -10,17 +10,30 @@
 }
 h3.contact_head{
     font-style: normal;
-    font-weight: normal;
-    font-size: 36px;
-    line-height: 43px;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
     color: #FFFFFF;
-    text-align: center;
-    padding: 50px 0px 65px 0px;
-    width: 792px;
-    max-width: 100%;
-    margin: 0 auto;
+    padding-top: 34px;
 }
-.contact_detailwidth .contact_position{
+.conatct_bg{
+    margin-top: 80px;
+}
+.conatct_bg img{
+    width: 100%;
+}
+h2.contact_headtwo{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 54px;
+    color: #FFFFFF;
+}
+h2.contact_headtwo span{
+    text-transform: uppercase;
+    color: #00F69B;
+}
+/* .contact_detailwidth .contact_position{
     font-style: normal;
     font-weight: bold;
     font-size: 28px;
@@ -35,18 +48,18 @@ h3.contact_head{
     right: 0;
     top: -17px;
     text-transform: capitalize;
-}
+} */
 .contact_detailwidth{
-    border: 1px solid #D9D9D9;
     box-sizing: border-box;
     border-radius: 20px;
-    width: 779px;
-    height: 770px;
     margin: 0 auto;
     max-width: 100%;
+    width: 588px;
+    height: 761px;
+    background: #23224D;
 }
 .contact_detail{
-    padding:80px 22% 0px 22%;
+    padding:73px 50px 0px 50px;
 }
 .contact_detail h4{
     font-style: normal;
@@ -56,6 +69,7 @@ h3.contact_head{
     text-align: center;
     color: #FFFFFF;
     padding-bottom: 20px;
+    text-align: left;
 }
 .contact_detail p.privacy_text{
     font-family: SF Pro Display;
@@ -63,7 +77,7 @@ h3.contact_head{
     font-weight: 300;
     font-size: 18px;
     line-height: 21px;
-    text-align: center;
+    text-align: left;
     color: #FFFFFF;
 }
 .contact_detail p.free_text{
@@ -71,7 +85,6 @@ h3.contact_head{
     font-weight: normal;
     font-size: 14px;
     line-height: 17px;
-    text-align: center;
     color: #FFFFFF;
     padding-top: 34px;
 }
@@ -191,7 +204,9 @@ h3.contact_head{
   .field input:focus + label::before {
     color: #00F29D;
   }
-
+.contact_container h2{
+    margin-top: 5%;
+}
 
 
 
@@ -210,9 +225,15 @@ h3.contact_head{
     h3.contact_head{
         font-size: 25px;
         line-height: 35px;
+        text-align: center;
+        padding: 0;
+    }
+    .conatct_bg img{
+        width: 100%;
     }
     .contact_detail {
-        padding: 60px 5% 0px 5%;
+        padding:44px 7% 0px 7%;
+        margin-top: 45px;
     }
     .contact_detail h4{
         font-size: 25px;
@@ -233,11 +254,24 @@ h3.contact_head{
     .contact_detailwidth .contact_position{
         font-size: 25px;
     }
+    .contact_container h2 {
+        margin-top: 10%;
+    }
+    h2.contact_headtwo{
+        font-size: 30px;
+        line-height: 41px;
+        text-align: center;
+    }
 }
 @media screen and (max-width: 320px) {
     h3.contact_head {
         font-size: 22px;
         line-height: 29px;
+    }
+    h2.contact_headtwo {
+        font-size: 25px;
+        line-height: 33px;
+        text-align: center;
     }
     .contact_detailwidth .contact_position {
         font-size: 22px;
@@ -260,7 +294,21 @@ h3.contact_head{
     .contact_detail p.free_text{
         padding-top: 10px;
     }
+    .conatct_bg img {
+        width: 100%;
+    }
+    .contact_detailwidth{
+        height: auto;
+    }
 }
 @media (min-width: 1022px) and (max-width:1024px) {
-    
+    .conatct_bg img {
+        width: 100%;
+    }
+    .contact_detailwidth{
+        height: auto;
+    }
+    .contact_container h2 {
+        margin-top: 3%;
+    }
 }
