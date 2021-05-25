@@ -190,7 +190,7 @@ import './newsdes.css';
                             </div>
                         </div>
                         {/* ------------ */}
-                        <div className="col-md-12">
+                        <div className="col-md-12 mt-5">
                             <div className="card border-0">
                                 <img src={Latest6} class="" alt="" width="100%"/>
                                 <div className="card-body card_area">

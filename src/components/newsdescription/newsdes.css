@@ -255,7 +255,7 @@ p.cate_text{
         margin-top: 16%;
     }
     .recent_detail1{
-        padding: 0px 15px 15px;
+        padding: 0px;
     }
     .recent_cate{
         padding-top: 0;
@@ -266,6 +266,10 @@ p.cate_text{
     }
     .related_newsdiv {
         padding-top: 60px;
+    }
+    .right_content .border-radius1 img{
+        width: 100%;
+        height: auto;
     }
     
 }
@@ -284,8 +288,33 @@ p.cate_text{
         font-size: 50px;
         padding-bottom: 8px;
     }
+    .card_area {
+        padding: 0px 15px 15px 15px;
+    }
+    .card-para{
+        font-size: 19px;
+    }
+    .contact_detail {
+        padding: 43px 15px 0px 15px;
+        margin-bottom: 30px;
+    }
+    .contact_detail h4{
+        font-size: 34px;
+    }
+    h2.contact_headtwo{
+        font-size: 36px;
+        line-height: 47px;
+    }
   
 }
 @media (min-width: 1022px) and (max-width:1024px) {
-    
+    .fname_feild{
+        width: 100%;
+    }
+    .lname_feild{
+        width: 100%;
+    }
+    .contact_detail {
+        margin-bottom: 30px;
+    }
 }
