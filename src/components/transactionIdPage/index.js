@@ -9,6 +9,7 @@ import './transactionIdPage.css';
 function TransId() {
   const [ value, setValue ] = useState('');
 	const [userId, setUserId ] = useState(null);
+	const [ inputError, setInputError ] = useState('');
   let history = useHistory();
 	
 	useEffect(() => {
@@ -23,27 +24,28 @@ function TransId() {
 	},[])
 
   const proceedData = (data) => {
-		const getToken = JSON.parse(localStorage.getItem("tokens"))
-    AuthService.updateTransactionId(userId ,data, getToken).then((result)=>{
-      swal('success', result.data.message, 'success')
-    });
+		if(validation(data)){
+			const getToken = JSON.parse(localStorage.getItem("tokens"))
+			AuthService.updateTransactionId(userId ,data, getToken).then((result)=>{
+				swal('success', result.data.message, 'success')
+				setInputError('');
+			});
+		}
   };
 	const validation = (data) => {
-		//validation
+		if(/[^a-zA-Z0-9]/.test( data )){
+			setInputError('special characters and white space not allowed!')
+			return false;
+		}
+		return true;
 	};
 
 	const validTxt= (e) => {
 		setValue(e.target.value);
-		validation(e.target.value);
 	};
 
   return (
     <>
-      {/* <div>
-        <h1>TransId</h1>
-        <input type="text" value={value} placeholder="TransactionId" onChange={(e)=>setValue(e.target.value)}/>
-        <button type="button" onClick={()=>proceedData(value)}>Proceed</button>
-      </div> */}
 
 <div class="container">
 		<div class="logo">
@@ -66,6 +68,7 @@ function TransId() {
 							<form action="">
 								<label for="fname">transaction id</label>
 								<input type="text" value={value} onChange={(e)=>validTxt(e)} placeholder="Please enter your transaction ID with #" />
+								<span style={{marginTop: "-23px"}} className="form-text text-danger" >{inputError}</span>
 								<br />
 								<button type="button" onClick={()=>proceedData(value)}>proceed</button>
 							</form>

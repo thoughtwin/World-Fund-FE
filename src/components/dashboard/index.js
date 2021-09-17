@@ -66,15 +66,15 @@ const Dashboard = () => {
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
+                  {/* <tr>
                     <td>
                         <div className="dashboard_tdimg"><img alt="dashboardimg.png" src={DashboardImage} /></div>
                         <div className="dashboard_table_text"> Recieved from Adam Sandler</div>
                     </td>
                     <td>N20495902020400550</td>
                     <td className="dolarnumber">$322.560</td>
-                  </tr>
-                  <tr>
+                  </tr> */}
+                  {/* <tr>
                     <td>
                       <div className="dashboard_tdimg"><img alt="dashboardimg.png" src={DashboardImage} /></div>
                       <div className="dashboard_table_text"> Recieved from Adam Sandler</div>
@@ -97,7 +97,7 @@ const Dashboard = () => {
                     </td>
                     <td>N20495902020400550</td>
                     <td className="dolarnumber">$322.560</td>
-                  </tr>
+                  </tr> */}
                 </tbody>
               </table>
             </div>

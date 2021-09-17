@@ -41,7 +41,7 @@ class History extends React.Component {
                     <th className="amounttablewidth deposit_width">Type</th>
                     <th className="amounttablewidth deposit_width">Amount</th>
                   </tr>
-                  <tr className="tableoddcontent">
+                  {/* <tr className="tableoddcontent">
                     <td><span>A</span>barbar.devine@gmail.com</td>
                     <td>12/09/2020</td>
                     <td>N20495902020400550</td>
@@ -68,7 +68,7 @@ class History extends React.Component {
                     <td>N20495902020400550</td>
                     <td>Withdrawl</td>
                     <td className="dolarnumber">$425.210</td>
-                  </tr>
+                  </tr> */}
 
                 </table>
               </div>
