@@ -17,7 +17,7 @@ const Dashboard = () => {
 
   return (
     <>
-      <TopNav userName={userName} />
+      <TopNav />
       <div className="dashboard_content dashboard_page" id="wrapper">
         <SideNav />
         <div className="dashboardmain_content page-content-wrapper">
