@@ -164,11 +164,11 @@ const Signup = () => {
             <span className="form-text text-danger">{errors.invitedBy && errors.invitedBy.message}</span>
           </div>
           <div className="checkbox remember_div">
-            <label><input
+            <label style={{textTransform: "capitalize"}}><input
               type="checkbox"
               name="remember" /> I have read <b>rules</b> and I <b>accept</b> them</label>
           </div>
-          <button type="submit" className="create_accountbtn">Create a free account</button>
+          <button type="submit" className="create_accountbtn">Create an account</button>
         </form>
       </div>
     </div>
