@@ -30,6 +30,8 @@ import OurPolicies from './components/policies';
 import Pages from './components/pagination';
 import AdminDashboard from './components/adminDashboard';
 import ClientDashboard from './components/clientDashboard';
+import TransId from './components/transactionIdPage';
+import userListTable from './components/userListTable';
 
 const App = (props) => {
   const existingTokens = JSON.parse(localStorage.getItem("tokens"));
@@ -60,6 +62,8 @@ const App = (props) => {
             <Route path='/verify' component={Verify} />
             <Route path='/pagination' component={Pages} />
             <Route path='/policies' component={OurPolicies} />;
+            <PrivateRoute exact path="/user/transactionId" component={TransId} />
+            <PrivateRoute exact path="/admin/usersList" component={userListTable} />
             <PrivateRoute exact path='/settings' component={Settings} />
             <PrivateRoute exact path='/affiliate' component={Affiliate} />
             <PrivateRoute exact path='/deposit' component={Deposit} />
@@ -70,8 +74,8 @@ const App = (props) => {
             <PrivateRoute exact path='/change_password' component={ChangePwd} />
             <Route path='/forgot_password' component={forgotPassword} />
             <PrivateRoute exact path="/admin/dashboard" component={AdminDashboard} />
-            <PrivateRoute exact path="/client/dashboard" component={ClientDashboard} />
-            <Route component={NotFound} />
+            {/* <PrivateRoute exact path="/client/dashboard" component={ClientDashboard} /> */}
+            <Route exact path='/notFound' component={NotFound} />
           </Switch>
         </div>
       </Router>

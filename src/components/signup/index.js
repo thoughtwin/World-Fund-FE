@@ -3,12 +3,15 @@ import AuthService from "../../services/AuthService";
 import './signup.css';
 import swal from 'sweetalert';
 import { Link, useHistory } from 'react-router-dom';
+import jwt_decode from "jwt-decode";
 import { useForm } from 'react-hook-form';
 import LogoImage from '../../assets/images/Logo.png';
 import signupLatest from '../../assets/images/Signup_Latest.png';
+import useAuth from "../context/auth";
 
 const Signup = () => {
   // initialize the hook
+  const { setAuthTokens } = useAuth();
   const { register, handleSubmit, errors, getValues } = useForm({
     mode: "onTouched"
   });
@@ -19,9 +22,9 @@ const Signup = () => {
     await AuthService.signup(data).then((userResult) => {
       console.log(userResult)
       if (userResult.data.status === 200) {
-        swal('success', userResult.data.message, 'success')
+        setAuthTokens(userResult.data);
+        history.push('/user/transactionId');
         e.target.reset();
-        history.push('/login');
       } else {
         swal('error', userResult.data.message, 'error')
       }

@@ -3,6 +3,7 @@ import AuthService from "../../services/AuthService";
 import swal from 'sweetalert';
 import useAuth from '../context/auth';
 import { Link, useHistory } from 'react-router-dom';
+import jwt_decode from "jwt-decode";
 import { useForm } from 'react-hook-form';
 import LogoImage from '../../assets/images/Logo.png';
 import signupLatest from '../../assets/images/Signup_Latest.png';
@@ -32,13 +33,15 @@ const Login = () => {
     await AuthService.login(data).then((userResult) => {
       console.log(userResult)
       if (userResult.data.status === 200) {
-        swal('success', userResult.data.message, 'success', { button: false, timer: 3000 })
+        setAuthTokens(userResult.data);
+        let decodedToken = jwt_decode(localStorage.getItem("tokens"))
+        // eslint-disable-next-line no-unused-expressions
+        decodedToken.isVerified ? swal('success', userResult.data.message, 'success', { button: false, timer: 3000 }) : null;
         setUser({
           email: "",
           password: ""
         })
-        setAuthTokens(userResult.data);
-        history.push("/dashboard")
+        decodedToken.isVerified === true && decodedToken.role === 'user' ? history.push("/dashboard") : decodedToken.role === 'admin' ? history.push("/admin/usersList") : history.push("/user/transactionId");
       } else if (userResult.data.status === 201) {
         swal('error', userResult.data.message, 'error')
       }

@@ -1,0 +1,151 @@
+body {
+  background-color: #01143E;
+  color: #fff;
+}
+@font-face {
+  font-family: SF Pro Display;
+  src: url(./font/SFPRODISPLAYBOLD.OTF);
+}
+@font-face {
+  font-family: SF Pro Regular;
+  src: url(./font/SFPRODISPLAYREGULAR.OTF);
+}
+@font-face {
+  font-family: SF Pro Medium;
+  src: url(./font/SFPRODISPLAYMEDIUM.OTF);
+}
+.logo {
+  margin: 75px auto;
+}
+.warper {
+  width: 100%;
+  max-width: 576px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 2%;
+}
+.content h3 {
+  font-family: SF Pro Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.125rem;
+  line-height: 32px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  margin-bottom: 12px;
+  font-family: SF Pro Display;
+}
+input, select, textarea{
+  color: #fff;
+}
+.input_field {
+  width: 333px;
+  margin: 0 auto;
+}
+.input_field label {
+  text-align: left;
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-family: SF Pro Medium;
+  text-transform: uppercase;
+}
+.content p {
+  font-family: SF Pro Regular;
+  font-size: 0.938rem;
+  line-height: 22px;
+  text-align: center;
+  color: #A3B0CC;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.input_field input {
+  background: #01143E;
+  border: 1px solid #00F29D;
+  box-sizing: border-box;
+  border-radius: 5px;
+  width: 333px;
+  height: 41px;
+  padding-left: 16px;
+  margin-top: 8px;
+  margin-bottom: 30px;
+  font-family: SF Pro Medium;
+}
+.content h6 {
+  font-family: SF Pro Regular;
+  font-size: 0.938rem;
+  line-height: 30px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-top: 30px;
+  margin: 0;
+}
+.content a {
+  font-family: SF Pro Display;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 30px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.input_field button {
+  background: #00F29D;
+  border-radius: 100px;
+  border: none;
+  width: 320px;
+  height: 48px;
+  font-family: SF Pro Medium;
+  font-size: 1rem;
+  line-height: 24px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #000000;
+  margin-bottom: 20px;
+}
+.copy_text {
+  text-align: center;
+  margin: 0 auto;
+}
+.content h5 {
+  font-family: SF Pro Medium;
+  font-size: 1rem;
+  line-height: 30px;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #334043;
+  margin-bottom: 50px;
+  word-break: break-all;
+  padding: 0 10px;
+}
+.copy_text {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.625rem;
+}
+/* Media Quary */
+
+@media screen and (min-device-width: 50px) and (max-device-width: 767px) {
+  .logo {
+      margin: 10% auto;
+      text-align: center;
+  }
+  .copy_text p {
+      font-size: 12px;
+  }
+  .input_field {
+      width: 100%;
+  }
+  .input_field input {
+      width: 100%;
+  }
+  .input_field button {
+      width: 100%;
+  }
+  .content h5 {
+      margin: 0;
+  }
+}
