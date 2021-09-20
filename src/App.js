@@ -75,7 +75,7 @@ const App = (props) => {
             <Route path='/forgot_password' component={forgotPassword} />
             <PrivateRoute exact path="/admin/dashboard" component={AdminDashboard} />
             {/* <PrivateRoute exact path="/client/dashboard" component={ClientDashboard} /> */}
-            <Route exact path='/notFound' component={NotFound} />
+            <Route path='*' component={NotFound} />
           </Switch>
         </div>
       </Router>

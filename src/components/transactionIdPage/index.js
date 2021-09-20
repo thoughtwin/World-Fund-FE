@@ -19,7 +19,7 @@ function TransId() {
 			setUserId(decodedToken._id)
 			setValue(decodedToken.transactionId)
 		} else {
-			// TODO: signup pe bhejna hai
+			// TODO: signup 
 		}
 	},[])
 
@@ -42,6 +42,7 @@ function TransId() {
 
 	const validTxt= (e) => {
 		setValue(e.target.value);
+		setInputError('');
 	};
 
   return (
