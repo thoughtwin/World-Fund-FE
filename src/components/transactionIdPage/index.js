@@ -37,6 +37,9 @@ function TransId() {
 			setInputError('special characters and white space not allowed!')
 			return false;
 		}
+		else if(value === ''){
+			setInputError('Required!');
+		}
 		return true;
 	};
 
