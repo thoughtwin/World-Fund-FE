@@ -21,7 +21,7 @@ const DataTableDemo = () => {
     const [ val, setVal ] = useState(false);
     const [selectedCustomers, setSelectedCustomers] = useState(null);
     const [globalFilter, setGlobalFilter] = useState(null);
-    const getToken = JSON.parse(localStorage.getItem("tokens"))
+    const getToken = localStorage.getItem("token");
     const dt = useRef(null);
 
     useEffect(() => {

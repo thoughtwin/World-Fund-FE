@@ -34,12 +34,12 @@ import TransId from './components/transactionIdPage';
 import userListTable from './components/userListTable';
 
 const App = (props) => {
-  const existingTokens = JSON.parse(localStorage.getItem("tokens"));
+  const existingTokens = localStorage.getItem("token");
   const [authTokens, setAuthTokens] = useState(existingTokens);
 
   const setTokens = (data) => {
-    localStorage.setItem("tokens", JSON.stringify(data));
-    localStorage.setItem("userName", JSON.stringify(data.userName));
+    localStorage.setItem("token", data);
+    // localStorage.setItem("userName", JSON.stringify(data.userName));
     setAuthTokens(data);
   }
   return (
@@ -49,6 +49,7 @@ const App = (props) => {
           {/* <Navbar /> */}
           <Switch>
             <Route exact path='/' component={Home} />
+            {/* <PrivateRoute exact path="/dashboard" component={Dashboard} /> */}
             <PrivateRoute exact path="/dashboard" component={Dashboard} />
             <Route exact path='/signup' component={Signup} />
             <Route exact path='/home' component={Home} />

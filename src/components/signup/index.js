@@ -22,7 +22,7 @@ const Signup = () => {
     await AuthService.signup(data).then((userResult) => {
       console.log(userResult)
       if (userResult.data.status === 200) {
-        setAuthTokens(userResult.data);
+        setAuthTokens(userResult.data.token);
         history.push('/user/transactionId');
         e.target.reset();
       } else {

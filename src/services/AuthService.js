@@ -47,7 +47,7 @@
        pinCode: data.pinCode
      }
      let tokenAuth = {
-       token: data.tokens.token
+       token: data.tokens
      }
      console.log('filterData', url.API_URL)
      return axios.put(url.API_URL + '/api/UpdateUserDetails', filterData, {
@@ -95,7 +95,7 @@
      console.log('token.token', url.API_URL)
      return axios.get(url.API_URL + '/api/ViewUserDetails', {
        headers: {
-         'Authorization': `Bearer ${token.token}`
+         'Authorization': `Bearer ${token}`
        }
      })
    },
@@ -103,7 +103,7 @@
    updateTransactionId: (userId, data, token) => {
      return axios.put(API_URL + `/api/transactionProcess/${userId}`, {transactionId:data},{
        headers: {
-         'Authorization': `Bearer ${token.token}`
+         'Authorization': `Bearer ${token}`
        }
      });
    },
@@ -111,7 +111,7 @@
    allUserList: (token) => {
      return axios.get(API_URL + '/api/admin/getAllUsers', {
        headers: {
-         'Authorization': `Bearer ${token.token}`
+         'Authorization': `Bearer ${token}`
        }
      });
    },
@@ -119,7 +119,7 @@
    verified: (token, userId) => {
      return axios.put(API_URL + `/api/admin/updateVerified/${userId}`, {isVerified:true}, {
        headers: {
-         'Authorization': `Bearer ${token.token}`
+         'Authorization': `Bearer ${token}`
        }
      });
    }

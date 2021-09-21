@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import swal from 'sweetalert';
-import { useHistory } from 'react-router-dom';
 import jwt_decode from "jwt-decode";
 import AuthService from "../../services/AuthService"; 
 import LogoImage from '../../assets/images/Logo.png';
@@ -10,12 +9,11 @@ function TransId() {
   const [ value, setValue ] = useState('');
 	const [userId, setUserId ] = useState(null);
 	const [ inputError, setInputError ] = useState('');
-  let history = useHistory();
 	
 	useEffect(() => {
-		const token = JSON.parse(localStorage.getItem("tokens"));
+		const token = localStorage.getItem("token");
 		if (token) {
-			const decodedToken = jwt_decode(token.token);
+			const decodedToken = jwt_decode(token);
 			setUserId(decodedToken._id)
 			setValue(decodedToken.transactionId)
 		} else {
@@ -25,7 +23,7 @@ function TransId() {
 
   const proceedData = (data) => {
 		if(validation(data)){
-			const getToken = JSON.parse(localStorage.getItem("tokens"))
+			const getToken = localStorage.getItem("token");
 			AuthService.updateTransactionId(userId ,data, getToken).then((result)=>{
 				swal('success', result.data.message, 'success')
 				setInputError('');

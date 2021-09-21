@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom'
+import jwt_decode from "jwt-decode";
 import ProfileImage from '../../assets/images/profile.png';
 import DashboardImage from '../../assets/images/dashboardimg.png';
 import TopNav from '../topnav';
@@ -10,8 +11,9 @@ const Dashboard = () => {
   const [userName, setUserName] = useState('');
 
   useEffect(() => {
-    const name = JSON.parse(localStorage.getItem('userName'));
-    // console.log("name", name);
+    const token = localStorage.getItem('token');
+    const decodedToken = jwt_decode(token);
+    const name = decodedToken.userName
     setUserName(name);
   }, [userName]);
 

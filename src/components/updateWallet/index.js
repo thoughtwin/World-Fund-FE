@@ -16,8 +16,8 @@ const UpdateWlt = () => {
   })
 
   useEffect(() => {
-    const getToken = JSON.parse(localStorage.getItem("tokens"))
-    setToken({ token: getToken.token })
+    const getToken = localStorage.getItem("token");
+    setToken({ token: getToken })
   }, []);
 
   const onSubmit = async (data1, e) => {

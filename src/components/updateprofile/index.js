@@ -44,8 +44,8 @@ const UpdateProfile = () => {
 
   const getProfile = async () => {
     console.log("working");
-    const getToken = JSON.parse(localStorage.getItem("tokens"))
-    setToken({ token: getToken.token })
+    const getToken = localStorage.getItem("token");
+    setToken({ token: getToken })
     await AuthService.getUser(getToken).then((userResult) => {
       console.log(userResult)
       if (userResult.status === 200) {
@@ -63,13 +63,13 @@ const UpdateProfile = () => {
 
   const onSubmit = async (e, i) => {
     i.preventDefault();
-    const tokens = JSON.parse(localStorage.getItem("tokens"))
+    const tokens = localStorage.getItem("token");
     let data = { userName, pinCode, invitedBy, tokens }
     await AuthService.updateUser(data).then((userResult) => {
-      let userName = userResult.data.data.userName
+      // let userName = userResult.data.data.userName
       console.log(userResult)
       if (userResult.status === 200) {
-        localStorage.setItem("userName", JSON.stringify(userName));
+        // localStorage.setItem("userName", JSON.stringify(userName));
         swal('success', userResult.data.message, 'success')
         setUser({
           userName: userResult.data.data.userName,

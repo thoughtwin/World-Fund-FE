@@ -3,6 +3,7 @@ import { Link, useHistory } from 'react-router-dom'
 import ProfileImage from '../../assets/images/profile.png';
 import LogoImage from '../../assets/images/Logo.png';
 import swal from 'sweetalert';
+import jwt_decode from "jwt-decode";
 import './Topnav.css';
 const TopNav = () => {
   const [userName, setUserName] = useState('');
@@ -25,8 +26,9 @@ const TopNav = () => {
   }
 
   useEffect(() => {
-    const name = JSON.parse(localStorage.getItem('userName'));
-    setUserName(name);
+    const token = localStorage.getItem('token');
+    const decodeToken = jwt_decode(token);
+    setUserName(decodeToken.userName);
   }, [userName]);
 
   return (

@@ -21,7 +21,7 @@ const Login = () => {
   });
 
   useEffect(() => {
-    if (localStorage.getItem("tokens")) {
+    if (localStorage.getItem("token")) {
       history.push('/dashboard');
       swal('warning', 'Already Login!', 'warning', { button: false, timer: 3000 })
     } else {
@@ -33,8 +33,8 @@ const Login = () => {
     await AuthService.login(data).then((userResult) => {
       console.log(userResult)
       if (userResult.data.status === 200) {
-        setAuthTokens(userResult.data);
-        let decodedToken = jwt_decode(localStorage.getItem("tokens"))
+        setAuthTokens(userResult.data.token);
+        let decodedToken = jwt_decode(localStorage.getItem("token"))
         // eslint-disable-next-line no-unused-expressions
         decodedToken.isVerified ? swal('success', userResult.data.message, 'success', { button: false, timer: 3000 }) : null;
         setUser({

@@ -6,11 +6,11 @@ import jwt_decode from "jwt-decode";
 function PrivateRoute({ component: Component, ...rest }) {
   const { authTokens } = useAuth();
 
-  let token = JSON.parse(localStorage.getItem("tokens"));
+  let token = localStorage.getItem("token");
   let {role, verified} = "";
   if (token) {
-    role  = jwt_decode(token.token).role;
-    verified = jwt_decode(token.token).isVerified
+    role  = jwt_decode(token).role;
+    verified = jwt_decode(token).isVerified
   }
   let pathName = rest.path
   const logedOut = () => {
