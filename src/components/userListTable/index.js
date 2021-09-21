@@ -140,12 +140,12 @@ const DataTableDemo = () => {
                     paginator rows={10} emptyMessage="No customers found" currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
                     paginatorTemplate="FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink CurrentPageReport RowsPerPageDropdown" rowsPerPageOptions={[10,25,50]}>
                     <Column selectionMode="multiple" style={{width:'3em'}}/>
-                    <Column field="userName" header="USERNAME" body={nameBodyTemplate} sortable filter filterPlaceholder="Search by USERNAME"/>
-                    <Column field="email" header="EMAIL ADDRESS" body={dateBodyTemplate} sortable filter filterPlaceholder="Search by email"/>
-                    <Column field="transactionId" header="TRANSACTION ID" body={TransactionBodyTemplate} sortable filter filterPlaceholder="Search by TransactionId" />
-                    <Column field="pinCode" header="PINCODE" body={pinCodeBodyTemplate} sortable filter filterPlaceholder="Search by Pincode" />
-                    <Column field="isVerifiedString" header="VERIFICATION STATUS" body={statusBodyTemplate} sortable filter filterPlaceholder="Search by verification" />
-                    <Column field="activity" header="Action" body={activityBodyTemplate}  />
+                    <Column field="userName" header="USERNAME" body={nameBodyTemplate} sortable filter filterPlaceholder="Search By Username"/>
+                    <Column field="email" header="EMAIL ADDRESS" body={dateBodyTemplate} sortable filter filterPlaceholder="Search By Email"/>
+                    <Column field="transactionId" header="TRANSACTION ID" body={TransactionBodyTemplate} sortable filter filterPlaceholder="Search By TransactionId" />
+                    <Column field="pinCode" header="PINCODE" body={pinCodeBodyTemplate} sortable filter filterPlaceholder="Search By Pincode" />
+                    <Column field="isVerifiedString" header="VERIFICATION STATUS" body={statusBodyTemplate} sortable filter filterPlaceholder="Search By Verification" />
+                    <Column field="activity" header="ACTION" body={activityBodyTemplate}  />
                 </DataTable>
             </div>
         </div>

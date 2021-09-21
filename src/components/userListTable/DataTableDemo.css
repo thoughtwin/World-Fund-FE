@@ -98,8 +98,21 @@
   .datatable-doc-demo .p-datatable.p-datatable-customers .p-datatable-thead > tr > th{
     width:auto !important;
   }
+  .dropdown-menu{
+    margin-left: -7px;
+  }
 }
-
+@media screen and (min-width: 250px)and (max-width: 280px) {
+  .datatable-doc-demo .table-header{
+    display: inline-block!important;
+  }
+  .button-drop {
+    margin: -8px 0px 0px 25px !important;
+  }
+  .search-areabox{
+    padding-top: 10px;
+  }
+}
 
 
 
@@ -116,4 +129,19 @@
   box-shadow: 0px 0px 8px 0px rgba(114, 112, 113, 0.6) !important;
   top: 40px;
   background-color: #fff !important;
+}
+img.dashboardheader{
+  border-radius: 50px;
+  height: 40px;
+  width: 40px;
+}
+.dropdown-menu a i{
+  padding-right: 10px;
+}
+.dropdown-menu a {
+  font-weight: 600 !important;
+}
+.search-areabox .p-input-icon-left .pi-search{
+  top: 14px;
+  left: 7px;
 }
