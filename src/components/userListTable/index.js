@@ -8,12 +8,15 @@ import React, { useState, useEffect, useRef } from 'react';
 import { DataTable } from 'primereact/datatable';
 import { Column } from 'primereact/column';
 import { Button } from 'primereact/button';
+import ProfileImage from '../../assets/images/profile.png';
 import { InputText } from 'primereact/inputtext';
 import AuthService from '../../services/AuthService';
+import { Link,useHistory } from 'react-router-dom'
 import './DataTableDemo.css';
 import swal from 'sweetalert';
 
 const DataTableDemo = () => {
+    let history = useHistory();
     const [customers, setCustomers] = useState(null);
     const [ val, setVal ] = useState(false);
     const [selectedCustomers, setSelectedCustomers] = useState(null);
@@ -26,13 +29,38 @@ const DataTableDemo = () => {
     }, [val]); // eslint-disable-line react-hooks/exhaustive-deps
 
     const renderHeader = () => {
+        const logout = async () => {
+            await swal({
+              icon: 'warning',
+              title: 'Are you sure?',
+              text: 'Are you sure you want to do logout?',
+              buttons: ["cancel", true]
+            }).then((result) => {
+              if (result) {
+                localStorage.removeItem('tokens');
+                localStorage.clear()
+                history.push("/login")
+              } else {
+                return false;
+              }
+            });
+          }
         return (
             <div className="table-header">
                 List of Users
-                <span className="p-input-icon-left">
-                    <i className="pi pi-search" />
-                    <InputText type="search" onInput={(e) => setGlobalFilter(e.target.value)} placeholder="Global Search" />
-                </span>
+                <div className="search-areabox">
+                    <span className="p-input-icon-left">
+                        <i className="pi pi-search" />
+                        <InputText  type="search" onInput={(e) => setGlobalFilter(e.target.value)} placeholder="Global Search" />
+                    </span>
+                    <span className="button-drop"> 
+                        <li className="dropdown rebecca_profilelist list-inline-item"><Link data-toggle="dropdown" to="#"><img alt="profile.png" src={ProfileImage} className="dashboardheader" /></Link>
+                        <ul className="dropdown-menu">
+                        <li><Link to="#" onClick={logout}><i className="fa fa-power-off"></i>Log-out</Link></li>
+                        </ul>
+                        </li>
+                    </span>
+                </div>
             </div>
         );
     }
